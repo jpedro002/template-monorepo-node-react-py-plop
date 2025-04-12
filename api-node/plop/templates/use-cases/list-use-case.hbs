@@ -1,0 +1,26 @@
+import { {{pascalCase model}}Repository, IQuery } from '../../repositories/{{kebabCase model}}-repository'
+
+interface ListRequest {
+  query: IQuery
+}
+
+export class List{{pascalCase model}}UseCase {
+  constructor(private {{camelCase model}}Repository: {{pascalCase model}}Repository) {}
+
+  async execute({ query }: ListRequest) {
+    try {
+      const result = await this.{{camelCase model}}Repository.all(query)
+      
+      return {
+        success: true,
+        data: result.data,
+        rowCount: result.rowCount
+      }
+    } catch (error) {
+      return {
+        success: false,
+        error: error instanceof Error ? error.message : 'Erro ao listar {{camelCase model}}s'
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+import { Prisma } from '@prisma/client'
+import { {{pascalCase model}}Repository } from '../../repositories/{{kebabCase model}}-repository'
+
+interface CreateRequest {
+  data: Prisma.{{pascalCase model}}CreateInput
+}
+
+export class Create{{pascalCase model}}UseCase {
+  constructor(private {{camelCase model}}Repository: {{pascalCase model}}Repository) {}
+
+  async execute({ data }: CreateRequest) {
+    try {
+      const result = await this.{{camelCase model}}Repository.post(data)
+      
+      return {
+        success: true,
+        data: result
+      }
+    } catch (error) {
+      return {
+        success: false,
+        error: error instanceof Error ? error.message : 'Erro ao criar {{camelCase model}}'
+      }
+    }
+  }
+}

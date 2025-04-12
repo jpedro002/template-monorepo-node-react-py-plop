@@ -1,0 +1,25 @@
+import { {{pascalCase model}}Repository, IReqParams } from '../../repositories/{{kebabCase model}}-repository'
+
+interface GetRequest {
+  params: IReqParams
+}
+
+export class Get{{pascalCase model}}UseCase {
+  constructor(private {{camelCase model}}Repository: {{pascalCase model}}Repository) {}
+
+  async execute({ params }: GetRequest) {
+    try {
+      const result = await this.{{camelCase model}}Repository.one(params)
+      
+      return {
+        success: true,
+        data: result
+      }
+    } catch (error) {
+      return {
+        success: false,
+        error: error instanceof Error ? error.message : 'Erro ao buscar {{camelCase model}}'
+      }
+    }
+  }
+}

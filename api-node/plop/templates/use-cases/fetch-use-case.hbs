@@ -1,0 +1,26 @@
+import { {{pascalCase model}}Repository, IQuery } from '../../repositories/{{kebabCase model}}-repository'
+
+interface FetchRequest {
+  query: IQuery
+}
+
+export class Fetch{{pascalCase model}}UseCase {
+  constructor(private {{camelCase model}}Repository: {{pascalCase model}}Repository) {}
+
+  async execute({ query }: FetchRequest) {
+    try {
+      const result = await this.{{camelCase model}}Repository.fetch(query)
+      
+      return {
+        success: true,
+        data: result.data,
+        pagination: result.pagination
+      }
+    } catch (error) {
+      return {
+        success: false,
+        error: error instanceof Error ? error.message : 'Erro ao buscar {{camelCase model}}s'
+      }
+    }
+  }
+}

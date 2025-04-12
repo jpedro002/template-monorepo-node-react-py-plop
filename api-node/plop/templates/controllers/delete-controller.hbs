@@ -1,0 +1,25 @@
+import { FastifyReply, FastifyRequest } from 'fastify'
+import { {{pascalCase model}}Repository } from '@/repositories/{{kebabCase model}}-repository'
+import { Delete{{pascalCase model}}UseCase } from '@/use-cases/{{kebabCase model}}/delete-{{kebabCase model}}-use-case'
+
+export async function Delete{{pascalCase model}}Controller(
+  request: FastifyRequest<{
+    Params: { id: string }
+  }>,
+  reply: FastifyReply,
+) {
+  const { id } = request.params
+
+  const {{camelCase model}}Repository = new {{pascalCase model}}Repository()
+  const delete{{pascalCase model}}UseCase = new Delete{{pascalCase model}}UseCase({{camelCase model}}Repository)
+
+  const result = await delete{{pascalCase model}}UseCase.execute({
+    params: { id: parseInt(id) }
+  })
+
+  if (!result.success) {
+    return reply.status(400).send({ message: result.error })
+  }
+
+  return reply.status(204).send()
+}

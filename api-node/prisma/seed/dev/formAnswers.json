@@ -1,0 +1,7032 @@
+[
+  {
+    "id": 1,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-10-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 1,
+    "userId": 17
+  },
+  {
+    "id": 2,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-10-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 1,
+    "userId": 21
+  },
+  {
+    "id": 3,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-10-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 1,
+    "userId": 14
+  },
+  {
+    "id": 4,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-10-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 1,
+    "userId": 21
+  },
+  {
+    "id": 5,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-10-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 1,
+    "userId": 2
+  },
+  {
+    "id": 6,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-10-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 1,
+    "userId": 5
+  },
+  {
+    "id": 7,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-10-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 1,
+    "userId": 7
+  },
+  {
+    "id": 8,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-10-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 1,
+    "userId": 1
+  },
+  {
+    "id": 9,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-10-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 1,
+    "userId": 1
+  },
+  {
+    "id": 10,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-10-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 1,
+    "userId": 18
+  },
+  {
+    "id": 11,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-10-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 1,
+    "userId": 21
+  },
+  {
+    "id": 12,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-10-22T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 1,
+    "userId": 21
+  },
+  {
+    "id": 13,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-10-23T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 1,
+    "userId": 21
+  },
+  {
+    "id": 14,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-10-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 1,
+    "userId": 1
+  },
+  {
+    "id": 15,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-10-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 1,
+    "userId": 21
+  },
+  {
+    "id": 16,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-10-26T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 1,
+    "userId": 16
+  },
+  {
+    "id": 17,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-10-27T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 1,
+    "userId": 19
+  },
+  {
+    "id": 18,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-10-28T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 1,
+    "userId": 9
+  },
+  {
+    "id": 19,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-10-29T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 1,
+    "userId": 5
+  },
+  {
+    "id": 20,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-10T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 2,
+    "userId": 6
+  },
+  {
+    "id": 21,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 2,
+    "userId": 6
+  },
+  {
+    "id": 22,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 2,
+    "userId": 19
+  },
+  {
+    "id": 23,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 2,
+    "userId": 17
+  },
+  {
+    "id": 24,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 2,
+    "userId": 4
+  },
+  {
+    "id": 25,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 2,
+    "userId": 14
+  },
+  {
+    "id": 26,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 2,
+    "userId": 18
+  },
+  {
+    "id": 27,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 2,
+    "userId": 1
+  },
+  {
+    "id": 28,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 2,
+    "userId": 4
+  },
+  {
+    "id": 29,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-10T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 3,
+    "userId": 10
+  },
+  {
+    "id": 30,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 3,
+    "userId": 8
+  },
+  {
+    "id": 31,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 3,
+    "userId": 12
+  },
+  {
+    "id": 32,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 3,
+    "userId": 4
+  },
+  {
+    "id": 33,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 3,
+    "userId": 3
+  },
+  {
+    "id": 34,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 3,
+    "userId": 18
+  },
+  {
+    "id": 35,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 3,
+    "userId": 20
+  },
+  {
+    "id": 36,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 3,
+    "userId": 21
+  },
+  {
+    "id": 37,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 3,
+    "userId": 14
+  },
+  {
+    "id": 38,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-10-29T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 4,
+    "userId": 11
+  },
+  {
+    "id": 39,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-10-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 5,
+    "userId": 20
+  },
+  {
+    "id": 40,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-10-31T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 5,
+    "userId": 10
+  },
+  {
+    "id": 41,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-10-10T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 6,
+    "userId": 11
+  },
+  {
+    "id": 42,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-10-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 6,
+    "userId": 14
+  },
+  {
+    "id": 43,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-10-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 6,
+    "userId": 11
+  },
+  {
+    "id": 44,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-10-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 6,
+    "userId": 9
+  },
+  {
+    "id": 45,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-10-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 6,
+    "userId": 16
+  },
+  {
+    "id": 46,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-10-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 6,
+    "userId": 8
+  },
+  {
+    "id": 47,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-10-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 6,
+    "userId": 9
+  },
+  {
+    "id": 48,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-10-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 6,
+    "userId": 9
+  },
+  {
+    "id": 49,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-10-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 7,
+    "userId": 1
+  },
+  {
+    "id": 50,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-10-22T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 7,
+    "userId": 14
+  },
+  {
+    "id": 51,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-10-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 7,
+    "userId": 1
+  },
+  {
+    "id": 52,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-10-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 7,
+    "userId": 5
+  },
+  {
+    "id": 53,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-10-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 7,
+    "userId": 21
+  },
+  {
+    "id": 54,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-10-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 8,
+    "userId": 11
+  },
+  {
+    "id": 55,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-10-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 9,
+    "userId": 11
+  },
+  {
+    "id": 56,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-10-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 9,
+    "userId": 8
+  },
+  {
+    "id": 57,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-10-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 9,
+    "userId": 20
+  },
+  {
+    "id": 58,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-10-31T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 9,
+    "userId": 1
+  },
+  {
+    "id": 59,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-10-10T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 10,
+    "userId": 9
+  },
+  {
+    "id": 60,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-10-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 10,
+    "userId": 17
+  },
+  {
+    "id": 61,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-10-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 10,
+    "userId": 9
+  },
+  {
+    "id": 62,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 10,
+    "userId": 19
+  },
+  {
+    "id": 63,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-10-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 10,
+    "userId": 17
+  },
+  {
+    "id": 64,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 10,
+    "userId": 6
+  },
+  {
+    "id": 65,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 10,
+    "userId": 5
+  },
+  {
+    "id": 66,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-10-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 10,
+    "userId": 7
+  },
+  {
+    "id": 67,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-22T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 10,
+    "userId": 2
+  },
+  {
+    "id": 68,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 10,
+    "userId": 5
+  },
+  {
+    "id": 69,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-10-29T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 11,
+    "userId": 3
+  },
+  {
+    "id": 70,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-10-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 12,
+    "userId": 6
+  },
+  {
+    "id": 71,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-10-26T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 12,
+    "userId": 1
+  },
+  {
+    "id": 72,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-10-28T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 12,
+    "userId": 19
+  },
+  {
+    "id": 73,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-10-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 13,
+    "userId": 5
+  },
+  {
+    "id": 74,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-10-10T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 13,
+    "userId": 3
+  },
+  {
+    "id": 75,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-10-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 13,
+    "userId": 21
+  },
+  {
+    "id": 76,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-10-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 13,
+    "userId": 16
+  },
+  {
+    "id": 77,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-10-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 13,
+    "userId": 21
+  },
+  {
+    "id": 78,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-10-26T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 13,
+    "userId": 11
+  },
+  {
+    "id": 79,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-10-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 13,
+    "userId": 15
+  },
+  {
+    "id": 80,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-10-22T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 13,
+    "userId": 3
+  },
+  {
+    "id": 81,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-28T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 14,
+    "userId": 2
+  },
+  {
+    "id": 82,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-27T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 14,
+    "userId": 3
+  },
+  {
+    "id": 83,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-29T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 14,
+    "userId": 10
+  },
+  {
+    "id": 84,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 14,
+    "userId": 7
+  },
+  {
+    "id": 85,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-10-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 15,
+    "userId": 3
+  },
+  {
+    "id": 86,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-10-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 15,
+    "userId": 10
+  },
+  {
+    "id": 87,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 15,
+    "userId": 7
+  },
+  {
+    "id": 88,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-10-22T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 15,
+    "userId": 17
+  },
+  {
+    "id": 89,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 16,
+    "userId": 21
+  },
+  {
+    "id": 90,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-23T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 16,
+    "userId": 11
+  },
+  {
+    "id": 91,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-31T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 16,
+    "userId": 20
+  },
+  {
+    "id": 92,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-10-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 17,
+    "userId": 3
+  },
+  {
+    "id": 93,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-10-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 17,
+    "userId": 6
+  },
+  {
+    "id": 94,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-10-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 17,
+    "userId": 20
+  },
+  {
+    "id": 95,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 17,
+    "userId": 7
+  },
+  {
+    "id": 96,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-10-26T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 18,
+    "userId": 7
+  },
+  {
+    "id": 97,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-10-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 19,
+    "userId": 8
+  },
+  {
+    "id": 98,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-10-10T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 19,
+    "userId": 14
+  },
+  {
+    "id": 99,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-10-23T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 19,
+    "userId": 2
+  },
+  {
+    "id": 100,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-10-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 19,
+    "userId": 17
+  },
+  {
+    "id": 101,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-10-26T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 20,
+    "userId": 20
+  },
+  {
+    "id": 102,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-10-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 20,
+    "userId": 6
+  },
+  {
+    "id": 103,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-10-31T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 21,
+    "userId": 21
+  },
+  {
+    "id": 104,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-10-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 22,
+    "userId": 17
+  },
+  {
+    "id": 105,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-10-23T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 22,
+    "userId": 17
+  },
+  {
+    "id": 106,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-10-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 22,
+    "userId": 9
+  },
+  {
+    "id": 107,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2024-10-29T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 23,
+    "userId": 1
+  },
+  {
+    "id": 108,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2024-10-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 23,
+    "userId": 12
+  },
+  {
+    "id": 109,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-10-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 24,
+    "userId": 20
+  },
+  {
+    "id": 110,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-10-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 24,
+    "userId": 6
+  },
+  {
+    "id": 111,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-10-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 24,
+    "userId": 18
+  },
+  {
+    "id": 112,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-10-26T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 24,
+    "userId": 1
+  },
+  {
+    "id": 113,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-10-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 24,
+    "userId": 14
+  },
+  {
+    "id": 114,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-03T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 25,
+    "userId": 9
+  },
+  {
+    "id": 115,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 25,
+    "userId": 2
+  },
+  {
+    "id": 116,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 25,
+    "userId": 2
+  },
+  {
+    "id": 117,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-01T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 25,
+    "userId": 1
+  },
+  {
+    "id": 118,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 25,
+    "userId": 16
+  },
+  {
+    "id": 120,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-02T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 25,
+    "userId": 12
+  },
+  {
+    "id": 119,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-11-04T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 25,
+    "userId": 17
+  },
+  {
+    "id": 122,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-22T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 25,
+    "userId": 8
+  },
+  {
+    "id": 205,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-28T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 36,
+    "userId": 5
+  },
+  {
+    "id": 475,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-02T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 81,
+    "userId": 11
+  },
+  {
+    "id": 486,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-12-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 12
+  },
+  {
+    "id": 491,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 19
+  },
+  {
+    "id": 496,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-12-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 19
+  },
+  {
+    "id": 502,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-23T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 21
+  },
+  {
+    "id": 511,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 10
+  },
+  {
+    "id": 513,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-09T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 3
+  },
+  {
+    "id": 515,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-12-04T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 7
+  },
+  {
+    "id": 526,
+    "textAnswer": null,
+    "numericAnswer": 2,
+    "type": "RANGE",
+    "createdAt": "2024-12-22T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 1
+  },
+  {
+    "id": 533,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-01T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 84,
+    "userId": 3
+  },
+  {
+    "id": 542,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 84,
+    "userId": 7
+  },
+  {
+    "id": 552,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 85,
+    "userId": 6
+  },
+  {
+    "id": 553,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-29T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 86,
+    "userId": 2
+  },
+  {
+    "id": 562,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 87,
+    "userId": 8
+  },
+  {
+    "id": 566,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-11-09T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 88,
+    "userId": 20
+  },
+  {
+    "id": 571,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-12-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 89,
+    "userId": 9
+  },
+  {
+    "id": 578,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-22T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 91,
+    "userId": 18
+  },
+  {
+    "id": 580,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 92,
+    "userId": 4
+  },
+  {
+    "id": 581,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 93,
+    "userId": 6
+  },
+  {
+    "id": 594,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-12-09T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 94,
+    "userId": 18
+  },
+  {
+    "id": 597,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-12-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 97,
+    "userId": 7
+  },
+  {
+    "id": 606,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-12-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 99,
+    "userId": 12
+  },
+  {
+    "id": 609,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-08T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 100,
+    "userId": 19
+  },
+  {
+    "id": 614,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-12-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 101,
+    "userId": 18
+  },
+  {
+    "id": 618,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-12-04T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 103,
+    "userId": 5
+  },
+  {
+    "id": 622,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-12-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 104,
+    "userId": 8
+  },
+  {
+    "id": 641,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-04T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 107,
+    "userId": 4
+  },
+  {
+    "id": 649,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-01-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 108,
+    "userId": 5
+  },
+  {
+    "id": 660,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-27T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 108,
+    "userId": 8
+  },
+  {
+    "id": 677,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2025-01-10T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 13
+  },
+  {
+    "id": 685,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 17
+  },
+  {
+    "id": 752,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-05T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 11
+  },
+  {
+    "id": 755,
+    "textAnswer": null,
+    "numericAnswer": 2,
+    "type": "RANGE",
+    "createdAt": "2025-02-23T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 3
+  },
+  {
+    "id": 758,
+    "textAnswer": null,
+    "numericAnswer": 2,
+    "type": "RANGE",
+    "createdAt": "2025-02-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 1
+  },
+  {
+    "id": 764,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-07T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 18
+  },
+  {
+    "id": 769,
+    "textAnswer": null,
+    "numericAnswer": 2,
+    "type": "RANGE",
+    "createdAt": "2025-02-26T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 13
+  },
+  {
+    "id": 774,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2025-02-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 9
+  },
+  {
+    "id": 778,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 127,
+    "userId": 21
+  },
+  {
+    "id": 785,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 127,
+    "userId": 17
+  },
+  {
+    "id": 789,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 127,
+    "userId": 9
+  },
+  {
+    "id": 796,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-26T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 127,
+    "userId": 11
+  },
+  {
+    "id": 797,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2025-02-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 128,
+    "userId": 8
+  },
+  {
+    "id": 805,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-04T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 129,
+    "userId": 6
+  },
+  {
+    "id": 806,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-02-07T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 129,
+    "userId": 4
+  },
+  {
+    "id": 809,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2025-02-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 130,
+    "userId": 4
+  },
+  {
+    "id": 812,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-02-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 130,
+    "userId": 9
+  },
+  {
+    "id": 814,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-02-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 130,
+    "userId": 13
+  },
+  {
+    "id": 820,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-02-06T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 131,
+    "userId": 21
+  },
+  {
+    "id": 828,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-02-05T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 131,
+    "userId": 17
+  },
+  {
+    "id": 831,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 131,
+    "userId": 8
+  },
+  {
+    "id": 837,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-02-28T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 132,
+    "userId": 19
+  },
+  {
+    "id": 841,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 132,
+    "userId": 21
+  },
+  {
+    "id": 844,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-07T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 133,
+    "userId": 6
+  },
+  {
+    "id": 845,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-02-10T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 134,
+    "userId": 21
+  },
+  {
+    "id": 850,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-02-02T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 137,
+    "userId": 12
+  },
+  {
+    "id": 859,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-02-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 139,
+    "userId": 18
+  },
+  {
+    "id": 861,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-02-22T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 140,
+    "userId": 6
+  },
+  {
+    "id": 863,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-02-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 141,
+    "userId": 21
+  },
+  {
+    "id": 866,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2025-02-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 142,
+    "userId": 19
+  },
+  {
+    "id": 124,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-07T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 25,
+    "userId": 21
+  },
+  {
+    "id": 128,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-06T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 25,
+    "userId": 1
+  },
+  {
+    "id": 132,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 25,
+    "userId": 5
+  },
+  {
+    "id": 139,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-29T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 26,
+    "userId": 19
+  },
+  {
+    "id": 141,
+    "textAnswer": null,
+    "numericAnswer": 1,
+    "type": "RANGE",
+    "createdAt": "2024-11-07T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 27,
+    "userId": 1
+  },
+  {
+    "id": 147,
+    "textAnswer": null,
+    "numericAnswer": 1,
+    "type": "RANGE",
+    "createdAt": "2024-11-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 27,
+    "userId": 3
+  },
+  {
+    "id": 156,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2024-11-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 28,
+    "userId": 2
+  },
+  {
+    "id": 157,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2024-11-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 28,
+    "userId": 14
+  },
+  {
+    "id": 162,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2024-11-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 28,
+    "userId": 21
+  },
+  {
+    "id": 177,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-11-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 32,
+    "userId": 2
+  },
+  {
+    "id": 182,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-11-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 32,
+    "userId": 18
+  },
+  {
+    "id": 184,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 32,
+    "userId": 12
+  },
+  {
+    "id": 186,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-11-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 33,
+    "userId": 7
+  },
+  {
+    "id": 190,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-11-04T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 34,
+    "userId": 15
+  },
+  {
+    "id": 200,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-11-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 36,
+    "userId": 3
+  },
+  {
+    "id": 199,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-11-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 36,
+    "userId": 17
+  },
+  {
+    "id": 207,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-22T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 36,
+    "userId": 21
+  },
+  {
+    "id": 208,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-06T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 37,
+    "userId": 5
+  },
+  {
+    "id": 215,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 39,
+    "userId": 21
+  },
+  {
+    "id": 219,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 39,
+    "userId": 18
+  },
+  {
+    "id": 222,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-11-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 40,
+    "userId": 9
+  },
+  {
+    "id": 224,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 40,
+    "userId": 16
+  },
+  {
+    "id": 228,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 40,
+    "userId": 9
+  },
+  {
+    "id": 235,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 42,
+    "userId": 3
+  },
+  {
+    "id": 238,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-11-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 42,
+    "userId": 11
+  },
+  {
+    "id": 241,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 42,
+    "userId": 14
+  },
+  {
+    "id": 244,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 44,
+    "userId": 16
+  },
+  {
+    "id": 246,
+    "textAnswer": null,
+    "numericAnswer": 1,
+    "type": "RANGE",
+    "createdAt": "2024-11-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 44,
+    "userId": 13
+  },
+  {
+    "id": 249,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-11-08T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 44,
+    "userId": 14
+  },
+  {
+    "id": 256,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-11-22T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 44,
+    "userId": 12
+  },
+  {
+    "id": 263,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 45,
+    "userId": 16
+  },
+  {
+    "id": 268,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2024-11-04T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 47,
+    "userId": 20
+  },
+  {
+    "id": 271,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-11-26T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 48,
+    "userId": 16
+  },
+  {
+    "id": 274,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2024-11-07T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 49,
+    "userId": 21
+  },
+  {
+    "id": 278,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2024-11-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 49,
+    "userId": 4
+  },
+  {
+    "id": 279,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-11-02T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 50,
+    "userId": 11
+  },
+  {
+    "id": 287,
+    "textAnswer": null,
+    "numericAnswer": 1,
+    "type": "RANGE",
+    "createdAt": "2024-11-26T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 52,
+    "userId": 9
+  },
+  {
+    "id": 290,
+    "textAnswer": null,
+    "numericAnswer": 1,
+    "type": "RANGE",
+    "createdAt": "2024-11-29T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 53,
+    "userId": 7
+  },
+  {
+    "id": 292,
+    "textAnswer": null,
+    "numericAnswer": 1,
+    "type": "RANGE",
+    "createdAt": "2024-11-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 53,
+    "userId": 6
+  },
+  {
+    "id": 294,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-11-03T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 54,
+    "userId": 8
+  },
+  {
+    "id": 296,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-11-07T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 54,
+    "userId": 5
+  },
+  {
+    "id": 305,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-11-23T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 54,
+    "userId": 6
+  },
+  {
+    "id": 309,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-11-06T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 54,
+    "userId": 15
+  },
+  {
+    "id": 476,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-03T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 81,
+    "userId": 11
+  },
+  {
+    "id": 487,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-12-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 18
+  },
+  {
+    "id": 493,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-31T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 18
+  },
+  {
+    "id": 497,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 13
+  },
+  {
+    "id": 504,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-22T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 8
+  },
+  {
+    "id": 516,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-12-02T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 16
+  },
+  {
+    "id": 517,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 9
+  },
+  {
+    "id": 518,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-08T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 4
+  },
+  {
+    "id": 525,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 14
+  },
+  {
+    "id": 528,
+    "textAnswer": null,
+    "numericAnswer": 2,
+    "type": "RANGE",
+    "createdAt": "2024-12-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 18
+  },
+  {
+    "id": 531,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-03T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 84,
+    "userId": 3
+  },
+  {
+    "id": 535,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 84,
+    "userId": 21
+  },
+  {
+    "id": 540,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-04T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 84,
+    "userId": 13
+  },
+  {
+    "id": 546,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-26T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 85,
+    "userId": 21
+  },
+  {
+    "id": 627,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-12-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 104,
+    "userId": 19
+  },
+  {
+    "id": 642,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-05T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 107,
+    "userId": 16
+  },
+  {
+    "id": 657,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-01-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 108,
+    "userId": 8
+  },
+  {
+    "id": 661,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-28T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 108,
+    "userId": 16
+  },
+  {
+    "id": 669,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-01-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 9
+  },
+  {
+    "id": 671,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-01-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 10
+  },
+  {
+    "id": 686,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-26T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 3
+  },
+  {
+    "id": 689,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-27T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 5
+  },
+  {
+    "id": 704,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-01-31T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 112,
+    "userId": 6
+  },
+  {
+    "id": 707,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-01-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 113,
+    "userId": 19
+  },
+  {
+    "id": 711,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 115,
+    "userId": 10
+  },
+  {
+    "id": 714,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-01-29T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 116,
+    "userId": 12
+  },
+  {
+    "id": 720,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-05T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 118,
+    "userId": 11
+  },
+  {
+    "id": 756,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-01T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 13
+  },
+  {
+    "id": 766,
+    "textAnswer": null,
+    "numericAnswer": 2,
+    "type": "RANGE",
+    "createdAt": "2025-02-28T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 16
+  },
+  {
+    "id": 767,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-10T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 14
+  },
+  {
+    "id": 775,
+    "textAnswer": null,
+    "numericAnswer": 2,
+    "type": "RANGE",
+    "createdAt": "2025-02-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 3
+  },
+  {
+    "id": 786,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-22T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 127,
+    "userId": 4
+  },
+  {
+    "id": 790,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-23T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 127,
+    "userId": 9
+  },
+  {
+    "id": 804,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-02-08T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 129,
+    "userId": 4
+  },
+  {
+    "id": 813,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-02-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 130,
+    "userId": 13
+  },
+  {
+    "id": 815,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-02-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 130,
+    "userId": 10
+  },
+  {
+    "id": 824,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-02-02T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 131,
+    "userId": 14
+  },
+  {
+    "id": 829,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-02-04T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 131,
+    "userId": 20
+  },
+  {
+    "id": 835,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2025-02-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 131,
+    "userId": 5
+  },
+  {
+    "id": 839,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-02-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 132,
+    "userId": 5
+  },
+  {
+    "id": 125,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 25,
+    "userId": 5
+  },
+  {
+    "id": 129,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 25,
+    "userId": 15
+  },
+  {
+    "id": 133,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 25,
+    "userId": 18
+  },
+  {
+    "id": 136,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-27T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 26,
+    "userId": 1
+  },
+  {
+    "id": 146,
+    "textAnswer": null,
+    "numericAnswer": 1,
+    "type": "RANGE",
+    "createdAt": "2024-11-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 27,
+    "userId": 12
+  },
+  {
+    "id": 148,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-02T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 27,
+    "userId": 12
+  },
+  {
+    "id": 150,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2024-11-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 28,
+    "userId": 12
+  },
+  {
+    "id": 151,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2024-11-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 28,
+    "userId": 10
+  },
+  {
+    "id": 159,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2024-11-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 28,
+    "userId": 16
+  },
+  {
+    "id": 165,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-11-28T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 29,
+    "userId": 2
+  },
+  {
+    "id": 167,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-11-29T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 29,
+    "userId": 13
+  },
+  {
+    "id": 176,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-11-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 32,
+    "userId": 21
+  },
+  {
+    "id": 178,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-11-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 32,
+    "userId": 12
+  },
+  {
+    "id": 180,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 32,
+    "userId": 8
+  },
+  {
+    "id": 188,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 33,
+    "userId": 13
+  },
+  {
+    "id": 189,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-11-06T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 34,
+    "userId": 4
+  },
+  {
+    "id": 194,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-11-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 36,
+    "userId": 5
+  },
+  {
+    "id": 201,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-11-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 36,
+    "userId": 6
+  },
+  {
+    "id": 203,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-23T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 36,
+    "userId": 8
+  },
+  {
+    "id": 209,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-07T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 37,
+    "userId": 14
+  },
+  {
+    "id": 214,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 38,
+    "userId": 9
+  },
+  {
+    "id": 216,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 39,
+    "userId": 17
+  },
+  {
+    "id": 223,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-23T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 40,
+    "userId": 15
+  },
+  {
+    "id": 225,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-11-22T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 40,
+    "userId": 10
+  },
+  {
+    "id": 229,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-27T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 40,
+    "userId": 3
+  },
+  {
+    "id": 231,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-05T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 41,
+    "userId": 14
+  },
+  {
+    "id": 234,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-07T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 42,
+    "userId": 9
+  },
+  {
+    "id": 236,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 42,
+    "userId": 13
+  },
+  {
+    "id": 242,
+    "textAnswer": null,
+    "numericAnswer": 1,
+    "type": "RANGE",
+    "createdAt": "2024-11-27T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 42,
+    "userId": 18
+  },
+  {
+    "id": 243,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-11-29T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 43,
+    "userId": 7
+  },
+  {
+    "id": 245,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-11-03T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 44,
+    "userId": 14
+  },
+  {
+    "id": 252,
+    "textAnswer": null,
+    "numericAnswer": 1,
+    "type": "RANGE",
+    "createdAt": "2024-11-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 44,
+    "userId": 11
+  },
+  {
+    "id": 254,
+    "textAnswer": null,
+    "numericAnswer": 1,
+    "type": "RANGE",
+    "createdAt": "2024-11-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 44,
+    "userId": 12
+  },
+  {
+    "id": 257,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-11-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 44,
+    "userId": 14
+  },
+  {
+    "id": 261,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 45,
+    "userId": 17
+  },
+  {
+    "id": 262,
+    "textAnswer": null,
+    "numericAnswer": 1,
+    "type": "RANGE",
+    "createdAt": "2024-11-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 45,
+    "userId": 16
+  },
+  {
+    "id": 264,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-11-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 46,
+    "userId": 18
+  },
+  {
+    "id": 265,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-11-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 46,
+    "userId": 3
+  },
+  {
+    "id": 266,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2024-11-03T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 47,
+    "userId": 7
+  },
+  {
+    "id": 267,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2024-11-02T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 47,
+    "userId": 14
+  },
+  {
+    "id": 269,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-11-28T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 48,
+    "userId": 16
+  },
+  {
+    "id": 270,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-11-27T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 48,
+    "userId": 13
+  },
+  {
+    "id": 275,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2024-11-08T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 49,
+    "userId": 2
+  },
+  {
+    "id": 280,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 50,
+    "userId": 12
+  },
+  {
+    "id": 284,
+    "textAnswer": null,
+    "numericAnswer": 1,
+    "type": "RANGE",
+    "createdAt": "2024-11-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 52,
+    "userId": 5
+  },
+  {
+    "id": 289,
+    "textAnswer": null,
+    "numericAnswer": 1,
+    "type": "RANGE",
+    "createdAt": "2024-11-28T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 53,
+    "userId": 6
+  },
+  {
+    "id": 295,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-11-08T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 54,
+    "userId": 9
+  },
+  {
+    "id": 299,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-11-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 54,
+    "userId": 18
+  },
+  {
+    "id": 302,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-11-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 54,
+    "userId": 10
+  },
+  {
+    "id": 306,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-11-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 54,
+    "userId": 15
+  },
+  {
+    "id": 310,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-11-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 54,
+    "userId": 10
+  },
+  {
+    "id": 477,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-06T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 81,
+    "userId": 20
+  },
+  {
+    "id": 488,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-12-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 4
+  },
+  {
+    "id": 490,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 7
+  },
+  {
+    "id": 498,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-12-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 5
+  },
+  {
+    "id": 505,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-12-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 8
+  },
+  {
+    "id": 510,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-10T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 1
+  },
+  {
+    "id": 514,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-12-01T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 8
+  },
+  {
+    "id": 522,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 13
+  },
+  {
+    "id": 532,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-05T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 84,
+    "userId": 21
+  },
+  {
+    "id": 534,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-07T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 84,
+    "userId": 15
+  },
+  {
+    "id": 544,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 84,
+    "userId": 5
+  },
+  {
+    "id": 545,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 85,
+    "userId": 20
+  },
+  {
+    "id": 587,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-12-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 93,
+    "userId": 18
+  },
+  {
+    "id": 593,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-01T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 94,
+    "userId": 13
+  },
+  {
+    "id": 599,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-27T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 97,
+    "userId": 16
+  },
+  {
+    "id": 602,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-02T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 98,
+    "userId": 9
+  },
+  {
+    "id": 605,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-04T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 99,
+    "userId": 9
+  },
+  {
+    "id": 611,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-12-10T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 100,
+    "userId": 2
+  },
+  {
+    "id": 612,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 101,
+    "userId": 12
+  },
+  {
+    "id": 620,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-06T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 103,
+    "userId": 1
+  },
+  {
+    "id": 626,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-12-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 104,
+    "userId": 21
+  },
+  {
+    "id": 631,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-12-29T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 104,
+    "userId": 13
+  },
+  {
+    "id": 632,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-12-28T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 104,
+    "userId": 7
+  },
+  {
+    "id": 635,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 105,
+    "userId": 7
+  },
+  {
+    "id": 636,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-12-28T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 106,
+    "userId": 3
+  },
+  {
+    "id": 643,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-03T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 107,
+    "userId": 16
+  },
+  {
+    "id": 656,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-01-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 108,
+    "userId": 10
+  },
+  {
+    "id": 662,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-29T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 108,
+    "userId": 13
+  },
+  {
+    "id": 670,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-01-07T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 14
+  },
+  {
+    "id": 672,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-01-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 18
+  },
+  {
+    "id": 692,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-31T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 17
+  },
+  {
+    "id": 694,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 111,
+    "userId": 4
+  },
+  {
+    "id": 703,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-01-27T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 112,
+    "userId": 16
+  },
+  {
+    "id": 708,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2025-01-31T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 113,
+    "userId": 19
+  },
+  {
+    "id": 709,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-31T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 114,
+    "userId": 21
+  },
+  {
+    "id": 710,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-01-02T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 115,
+    "userId": 7
+  },
+  {
+    "id": 717,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-01-28T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 116,
+    "userId": 12
+  },
+  {
+    "id": 722,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-03T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 118,
+    "userId": 18
+  },
+  {
+    "id": 736,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 122,
+    "userId": 5
+  },
+  {
+    "id": 742,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2025-01-07T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 124,
+    "userId": 3
+  },
+  {
+    "id": 760,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-06T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 16
+  },
+  {
+    "id": 768,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2025-02-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 6
+  },
+  {
+    "id": 781,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 127,
+    "userId": 9
+  },
+  {
+    "id": 791,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 127,
+    "userId": 11
+  },
+  {
+    "id": 817,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2025-02-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 130,
+    "userId": 5
+  },
+  {
+    "id": 819,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 131,
+    "userId": 1
+  },
+  {
+    "id": 833,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 131,
+    "userId": 13
+  },
+  {
+    "id": 838,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 132,
+    "userId": 17
+  },
+  {
+    "id": 853,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-02-05T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 137,
+    "userId": 6
+  },
+  {
+    "id": 855,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-02-10T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 138,
+    "userId": 3
+  },
+  {
+    "id": 854,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-02-09T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 138,
+    "userId": 18
+  },
+  {
+    "id": 856,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-02-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 139,
+    "userId": 6
+  },
+  {
+    "id": 857,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-02-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 139,
+    "userId": 5
+  },
+  {
+    "id": 862,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2025-02-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 140,
+    "userId": 10
+  },
+  {
+    "id": 864,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-02-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 141,
+    "userId": 7
+  },
+  {
+    "id": 865,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2025-02-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 142,
+    "userId": 14
+  },
+  {
+    "id": 867,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-28T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 143,
+    "userId": 5
+  },
+  {
+    "id": 123,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-23T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 25,
+    "userId": 9
+  },
+  {
+    "id": 478,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-01T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 81,
+    "userId": 11
+  },
+  {
+    "id": 484,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-08T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 6
+  },
+  {
+    "id": 492,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-29T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 9
+  },
+  {
+    "id": 499,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 9
+  },
+  {
+    "id": 508,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-12-06T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 21
+  },
+  {
+    "id": 512,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 2
+  },
+  {
+    "id": 527,
+    "textAnswer": null,
+    "numericAnswer": 2,
+    "type": "RANGE",
+    "createdAt": "2024-12-23T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 4
+  },
+  {
+    "id": 530,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-02T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 84,
+    "userId": 20
+  },
+  {
+    "id": 539,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 84,
+    "userId": 11
+  },
+  {
+    "id": 625,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-12-31T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 104,
+    "userId": 12
+  },
+  {
+    "id": 637,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 107,
+    "userId": 9
+  },
+  {
+    "id": 644,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-09T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 107,
+    "userId": 13
+  },
+  {
+    "id": 650,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-01-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 108,
+    "userId": 12
+  },
+  {
+    "id": 655,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-23T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 108,
+    "userId": 3
+  },
+  {
+    "id": 663,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 108,
+    "userId": 5
+  },
+  {
+    "id": 666,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 109,
+    "userId": 19
+  },
+  {
+    "id": 674,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-01-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 18
+  },
+  {
+    "id": 676,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-01-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 9
+  },
+  {
+    "id": 682,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-22T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 1
+  },
+  {
+    "id": 698,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 111,
+    "userId": 16
+  },
+  {
+    "id": 701,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-01-26T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 112,
+    "userId": 6
+  },
+  {
+    "id": 728,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-08T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 118,
+    "userId": 11
+  },
+  {
+    "id": 729,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-01-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 118,
+    "userId": 7
+  },
+  {
+    "id": 738,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 122,
+    "userId": 13
+  },
+  {
+    "id": 740,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-02T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 123,
+    "userId": 18
+  },
+  {
+    "id": 741,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2025-01-05T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 124,
+    "userId": 21
+  },
+  {
+    "id": 746,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-01-10T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 124,
+    "userId": 14
+  },
+  {
+    "id": 749,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-01-08T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 125,
+    "userId": 12
+  },
+  {
+    "id": 759,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2025-02-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 15
+  },
+  {
+    "id": 770,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2025-02-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 5
+  },
+  {
+    "id": 783,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 127,
+    "userId": 19
+  },
+  {
+    "id": 784,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 127,
+    "userId": 21
+  },
+  {
+    "id": 803,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-06T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 129,
+    "userId": 8
+  },
+  {
+    "id": 808,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-08T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 130,
+    "userId": 1
+  },
+  {
+    "id": 826,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2025-02-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 131,
+    "userId": 1
+  },
+  {
+    "id": 827,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 131,
+    "userId": 13
+  },
+  {
+    "id": 840,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-02-26T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 132,
+    "userId": 9
+  },
+  {
+    "id": 846,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-02-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 134,
+    "userId": 9
+  },
+  {
+    "id": 847,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-02-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 135,
+    "userId": 20
+  },
+  {
+    "id": 848,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-02-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 136,
+    "userId": 15
+  },
+  {
+    "id": 849,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-02-01T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 137,
+    "userId": 14
+  },
+  {
+    "id": 126,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 25,
+    "userId": 2
+  },
+  {
+    "id": 130,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-11-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 25,
+    "userId": 8
+  },
+  {
+    "id": 134,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 25,
+    "userId": 3
+  },
+  {
+    "id": 140,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-28T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 26,
+    "userId": 1
+  },
+  {
+    "id": 142,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-04T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 27,
+    "userId": 11
+  },
+  {
+    "id": 149,
+    "textAnswer": null,
+    "numericAnswer": 1,
+    "type": "RANGE",
+    "createdAt": "2024-11-08T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 27,
+    "userId": 14
+  },
+  {
+    "id": 153,
+    "textAnswer": null,
+    "numericAnswer": 1,
+    "type": "RANGE",
+    "createdAt": "2024-11-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 28,
+    "userId": 15
+  },
+  {
+    "id": 154,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2024-11-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 28,
+    "userId": 11
+  },
+  {
+    "id": 160,
+    "textAnswer": null,
+    "numericAnswer": 1,
+    "type": "RANGE",
+    "createdAt": "2024-11-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 28,
+    "userId": 18
+  },
+  {
+    "id": 164,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-11-27T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 29,
+    "userId": 19
+  },
+  {
+    "id": 166,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-11-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 29,
+    "userId": 13
+  },
+  {
+    "id": 170,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-05T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 30,
+    "userId": 17
+  },
+  {
+    "id": 169,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-04T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 30,
+    "userId": 7
+  },
+  {
+    "id": 173,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-08T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 31,
+    "userId": 5
+  },
+  {
+    "id": 179,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-11-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 32,
+    "userId": 15
+  },
+  {
+    "id": 181,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-11-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 32,
+    "userId": 2
+  },
+  {
+    "id": 183,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-11-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 32,
+    "userId": 17
+  },
+  {
+    "id": 187,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-26T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 33,
+    "userId": 13
+  },
+  {
+    "id": 191,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-03T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 34,
+    "userId": 8
+  },
+  {
+    "id": 192,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-11-07T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 34,
+    "userId": 16
+  },
+  {
+    "id": 193,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 35,
+    "userId": 8
+  },
+  {
+    "id": 196,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-11-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 36,
+    "userId": 4
+  },
+  {
+    "id": 197,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-11-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 36,
+    "userId": 6
+  },
+  {
+    "id": 198,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-11-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 36,
+    "userId": 21
+  },
+  {
+    "id": 210,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-09T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 37,
+    "userId": 8
+  },
+  {
+    "id": 212,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 38,
+    "userId": 13
+  },
+  {
+    "id": 217,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 39,
+    "userId": 5
+  },
+  {
+    "id": 221,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-11-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 40,
+    "userId": 11
+  },
+  {
+    "id": 226,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 40,
+    "userId": 15
+  },
+  {
+    "id": 230,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-28T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 40,
+    "userId": 6
+  },
+  {
+    "id": 232,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-04T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 41,
+    "userId": 5
+  },
+  {
+    "id": 237,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-09T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 42,
+    "userId": 8
+  },
+  {
+    "id": 240,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 42,
+    "userId": 17
+  },
+  {
+    "id": 247,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-11-02T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 44,
+    "userId": 15
+  },
+  {
+    "id": 250,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-11-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 44,
+    "userId": 5
+  },
+  {
+    "id": 253,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-11-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 44,
+    "userId": 13
+  },
+  {
+    "id": 258,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-11-29T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 44,
+    "userId": 13
+  },
+  {
+    "id": 259,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-10T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 45,
+    "userId": 2
+  },
+  {
+    "id": 276,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2024-11-06T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 49,
+    "userId": 21
+  },
+  {
+    "id": 281,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-11-03T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 50,
+    "userId": 16
+  },
+  {
+    "id": 286,
+    "textAnswer": null,
+    "numericAnswer": 1,
+    "type": "RANGE",
+    "createdAt": "2024-11-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 52,
+    "userId": 21
+  },
+  {
+    "id": 288,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-03T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 53,
+    "userId": 21
+  },
+  {
+    "id": 298,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-11-04T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 54,
+    "userId": 17
+  },
+  {
+    "id": 301,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-11-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 54,
+    "userId": 21
+  },
+  {
+    "id": 303,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-11-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 54,
+    "userId": 19
+  },
+  {
+    "id": 308,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-11-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 54,
+    "userId": 12
+  },
+  {
+    "id": 311,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-11-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 54,
+    "userId": 15
+  },
+  {
+    "id": 479,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-05T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 81,
+    "userId": 17
+  },
+  {
+    "id": 483,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 8
+  },
+  {
+    "id": 489,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-26T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 13
+  },
+  {
+    "id": 500,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 12
+  },
+  {
+    "id": 509,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-12-07T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 11
+  },
+  {
+    "id": 521,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 7
+  },
+  {
+    "id": 537,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 84,
+    "userId": 18
+  },
+  {
+    "id": 543,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 84,
+    "userId": 9
+  },
+  {
+    "id": 547,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-23T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 85,
+    "userId": 9
+  },
+  {
+    "id": 548,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 85,
+    "userId": 8
+  },
+  {
+    "id": 556,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-28T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 86,
+    "userId": 2
+  },
+  {
+    "id": 559,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-08T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 87,
+    "userId": 18
+  },
+  {
+    "id": 567,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 88,
+    "userId": 12
+  },
+  {
+    "id": 572,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 89,
+    "userId": 5
+  },
+  {
+    "id": 573,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-12-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 89,
+    "userId": 5
+  },
+  {
+    "id": 574,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-12-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 90,
+    "userId": 18
+  },
+  {
+    "id": 575,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-26T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 91,
+    "userId": 17
+  },
+  {
+    "id": 576,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 91,
+    "userId": 8
+  },
+  {
+    "id": 585,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-12-23T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 93,
+    "userId": 13
+  },
+  {
+    "id": 586,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 93,
+    "userId": 19
+  },
+  {
+    "id": 590,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-03T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 94,
+    "userId": 7
+  },
+  {
+    "id": 589,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-12-02T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 94,
+    "userId": 2
+  },
+  {
+    "id": 628,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-12-27T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 104,
+    "userId": 10
+  },
+  {
+    "id": 630,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-12-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 104,
+    "userId": 2
+  },
+  {
+    "id": 633,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 105,
+    "userId": 5
+  },
+  {
+    "id": 634,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-10-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 105,
+    "userId": 18
+  },
+  {
+    "id": 638,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-07T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 107,
+    "userId": 1
+  },
+  {
+    "id": 645,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-08T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 107,
+    "userId": 21
+  },
+  {
+    "id": 648,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-01-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 108,
+    "userId": 21
+  },
+  {
+    "id": 654,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-22T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 108,
+    "userId": 2
+  },
+  {
+    "id": 659,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 108,
+    "userId": 10
+  },
+  {
+    "id": 664,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-26T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 108,
+    "userId": 20
+  },
+  {
+    "id": 668,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-01-03T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 109,
+    "userId": 18
+  },
+  {
+    "id": 675,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-01-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 14
+  },
+  {
+    "id": 683,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-23T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 5
+  },
+  {
+    "id": 684,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-01-09T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 4
+  },
+  {
+    "id": 688,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-28T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 12
+  },
+  {
+    "id": 690,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 3
+  },
+  {
+    "id": 691,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-29T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 14
+  },
+  {
+    "id": 693,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 111,
+    "userId": 3
+  },
+  {
+    "id": 696,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 111,
+    "userId": 18
+  },
+  {
+    "id": 700,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-01-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 112,
+    "userId": 12
+  },
+  {
+    "id": 702,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-01-28T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 112,
+    "userId": 7
+  },
+  {
+    "id": 706,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-01-29T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 113,
+    "userId": 20
+  },
+  {
+    "id": 712,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2025-01-03T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 115,
+    "userId": 1
+  },
+  {
+    "id": 713,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-01-04T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 115,
+    "userId": 4
+  },
+  {
+    "id": 715,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-01-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 116,
+    "userId": 10
+  },
+  {
+    "id": 716,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-01-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 116,
+    "userId": 18
+  },
+  {
+    "id": 719,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 117,
+    "userId": 17
+  },
+  {
+    "id": 721,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-04T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 118,
+    "userId": 20
+  },
+  {
+    "id": 724,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-07T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 118,
+    "userId": 19
+  },
+  {
+    "id": 726,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-10T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 118,
+    "userId": 16
+  },
+  {
+    "id": 730,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-01-31T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 119,
+    "userId": 16
+  },
+  {
+    "id": 731,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-01-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 120,
+    "userId": 5
+  },
+  {
+    "id": 733,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-01-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 121,
+    "userId": 20
+  },
+  {
+    "id": 732,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 121,
+    "userId": 4
+  },
+  {
+    "id": 734,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 122,
+    "userId": 10
+  },
+  {
+    "id": 737,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 122,
+    "userId": 8
+  },
+  {
+    "id": 744,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-01-08T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 124,
+    "userId": 12
+  },
+  {
+    "id": 745,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-01-09T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 124,
+    "userId": 16
+  },
+  {
+    "id": 747,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-01-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 124,
+    "userId": 1
+  },
+  {
+    "id": 748,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-01-07T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 125,
+    "userId": 17
+  },
+  {
+    "id": 762,
+    "textAnswer": null,
+    "numericAnswer": 2,
+    "type": "RANGE",
+    "createdAt": "2025-02-22T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 21
+  },
+  {
+    "id": 771,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-08T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 16
+  },
+  {
+    "id": 780,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 127,
+    "userId": 6
+  },
+  {
+    "id": 787,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 127,
+    "userId": 12
+  },
+  {
+    "id": 795,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-27T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 127,
+    "userId": 21
+  },
+  {
+    "id": 801,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-05T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 129,
+    "userId": 11
+  },
+  {
+    "id": 811,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-02-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 130,
+    "userId": 6
+  },
+  {
+    "id": 821,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 131,
+    "userId": 5
+  },
+  {
+    "id": 834,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 131,
+    "userId": 1
+  },
+  {
+    "id": 843,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-23T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 132,
+    "userId": 19
+  },
+  {
+    "id": 852,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-02-04T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 137,
+    "userId": 20
+  },
+  {
+    "id": 121,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-11-05T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 25,
+    "userId": 10
+  },
+  {
+    "id": 161,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2024-11-22T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 28,
+    "userId": 20
+  },
+  {
+    "id": 168,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-11-26T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 29,
+    "userId": 7
+  },
+  {
+    "id": 171,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-10-03T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 30,
+    "userId": 9
+  },
+  {
+    "id": 172,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-06T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 31,
+    "userId": 19
+  },
+  {
+    "id": 175,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-11-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 32,
+    "userId": 10
+  },
+  {
+    "id": 204,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-29T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 36,
+    "userId": 8
+  },
+  {
+    "id": 480,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-07T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 81,
+    "userId": 18
+  },
+  {
+    "id": 485,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-12-09T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 14
+  },
+  {
+    "id": 494,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-28T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 13
+  },
+  {
+    "id": 501,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 14
+  },
+  {
+    "id": 506,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-12-05T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 5
+  },
+  {
+    "id": 520,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 6
+  },
+  {
+    "id": 523,
+    "textAnswer": null,
+    "numericAnswer": 2,
+    "type": "RANGE",
+    "createdAt": "2024-12-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 16
+  },
+  {
+    "id": 529,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-06T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 84,
+    "userId": 12
+  },
+  {
+    "id": 541,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 84,
+    "userId": 13
+  },
+  {
+    "id": 550,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 85,
+    "userId": 7
+  },
+  {
+    "id": 555,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-31T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 86,
+    "userId": 2
+  },
+  {
+    "id": 561,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-12-06T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 87,
+    "userId": 12
+  },
+  {
+    "id": 565,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-12-06T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 88,
+    "userId": 20
+  },
+  {
+    "id": 568,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 89,
+    "userId": 3
+  },
+  {
+    "id": 584,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-22T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 93,
+    "userId": 6
+  },
+  {
+    "id": 588,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-12-06T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 94,
+    "userId": 12
+  },
+  {
+    "id": 601,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-12-31T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 97,
+    "userId": 17
+  },
+  {
+    "id": 603,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-03T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 98,
+    "userId": 14
+  },
+  {
+    "id": 604,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-05T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 99,
+    "userId": 16
+  },
+  {
+    "id": 621,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 103,
+    "userId": 19
+  },
+  {
+    "id": 624,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-12-26T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 104,
+    "userId": 13
+  },
+  {
+    "id": 639,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-06T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 107,
+    "userId": 1
+  },
+  {
+    "id": 646,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-02T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 107,
+    "userId": 19
+  },
+  {
+    "id": 651,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-01-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 108,
+    "userId": 2
+  },
+  {
+    "id": 653,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-01-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 108,
+    "userId": 17
+  },
+  {
+    "id": 665,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 108,
+    "userId": 7
+  },
+  {
+    "id": 667,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-01-02T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 109,
+    "userId": 9
+  },
+  {
+    "id": 673,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-01-08T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 5
+  },
+  {
+    "id": 680,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 13
+  },
+  {
+    "id": 681,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 16
+  },
+  {
+    "id": 687,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 4
+  },
+  {
+    "id": 695,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 111,
+    "userId": 11
+  },
+  {
+    "id": 697,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 111,
+    "userId": 17
+  },
+  {
+    "id": 699,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-01-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 112,
+    "userId": 7
+  },
+  {
+    "id": 705,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-01-29T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 112,
+    "userId": 20
+  },
+  {
+    "id": 723,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-09T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 118,
+    "userId": 14
+  },
+  {
+    "id": 725,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-06T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 118,
+    "userId": 20
+  },
+  {
+    "id": 735,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 122,
+    "userId": 10
+  },
+  {
+    "id": 739,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 123,
+    "userId": 20
+  },
+  {
+    "id": 743,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-01-06T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 124,
+    "userId": 18
+  },
+  {
+    "id": 763,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2025-02-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 13
+  },
+  {
+    "id": 772,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2025-02-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 8
+  },
+  {
+    "id": 779,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-04T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 127,
+    "userId": 15
+  },
+  {
+    "id": 782,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 127,
+    "userId": 18
+  },
+  {
+    "id": 794,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-28T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 127,
+    "userId": 2
+  },
+  {
+    "id": 802,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-03T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 129,
+    "userId": 6
+  },
+  {
+    "id": 807,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-09T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 130,
+    "userId": 21
+  },
+  {
+    "id": 822,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 131,
+    "userId": 9
+  },
+  {
+    "id": 830,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 131,
+    "userId": 20
+  },
+  {
+    "id": 842,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-02-27T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 132,
+    "userId": 16
+  },
+  {
+    "id": 851,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-02-03T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 137,
+    "userId": 5
+  },
+  {
+    "id": 858,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-02-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 139,
+    "userId": 4
+  },
+  {
+    "id": 860,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2025-02-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 140,
+    "userId": 14
+  },
+  {
+    "id": 127,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-11-10T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 25,
+    "userId": 11
+  },
+  {
+    "id": 131,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-09T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 25,
+    "userId": 9
+  },
+  {
+    "id": 135,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 25,
+    "userId": 12
+  },
+  {
+    "id": 137,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 26,
+    "userId": 13
+  },
+  {
+    "id": 138,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-26T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 26,
+    "userId": 1
+  },
+  {
+    "id": 143,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-05T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 27,
+    "userId": 2
+  },
+  {
+    "id": 144,
+    "textAnswer": null,
+    "numericAnswer": 1,
+    "type": "RANGE",
+    "createdAt": "2024-11-09T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 27,
+    "userId": 7
+  },
+  {
+    "id": 145,
+    "textAnswer": null,
+    "numericAnswer": 1,
+    "type": "RANGE",
+    "createdAt": "2024-11-06T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 27,
+    "userId": 2
+  },
+  {
+    "id": 152,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2024-11-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 28,
+    "userId": 3
+  },
+  {
+    "id": 155,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2024-11-23T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 28,
+    "userId": 4
+  },
+  {
+    "id": 158,
+    "textAnswer": null,
+    "numericAnswer": 1,
+    "type": "RANGE",
+    "createdAt": "2024-11-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 28,
+    "userId": 2
+  },
+  {
+    "id": 163,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-11-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 29,
+    "userId": 3
+  },
+  {
+    "id": 174,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-22T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 32,
+    "userId": 14
+  },
+  {
+    "id": 185,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-11-09T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 32,
+    "userId": 19
+  },
+  {
+    "id": 195,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 36,
+    "userId": 14
+  },
+  {
+    "id": 202,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 36,
+    "userId": 2
+  },
+  {
+    "id": 206,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-27T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 36,
+    "userId": 3
+  },
+  {
+    "id": 211,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-08T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 37,
+    "userId": 14
+  },
+  {
+    "id": 213,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-10T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 38,
+    "userId": 10
+  },
+  {
+    "id": 218,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 39,
+    "userId": 15
+  },
+  {
+    "id": 220,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-11-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 40,
+    "userId": 2
+  },
+  {
+    "id": 227,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-29T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 40,
+    "userId": 16
+  },
+  {
+    "id": 233,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-11-02T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 41,
+    "userId": 21
+  },
+  {
+    "id": 239,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 42,
+    "userId": 10
+  },
+  {
+    "id": 248,
+    "textAnswer": null,
+    "numericAnswer": 1,
+    "type": "RANGE",
+    "createdAt": "2024-11-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 44,
+    "userId": 1
+  },
+  {
+    "id": 251,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-11-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 44,
+    "userId": 21
+  },
+  {
+    "id": 255,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-11-23T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 44,
+    "userId": 8
+  },
+  {
+    "id": 260,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 45,
+    "userId": 12
+  },
+  {
+    "id": 272,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-11-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 48,
+    "userId": 8
+  },
+  {
+    "id": 273,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2024-11-05T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 49,
+    "userId": 2
+  },
+  {
+    "id": 277,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2024-11-12T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 49,
+    "userId": 13
+  },
+  {
+    "id": 282,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 50,
+    "userId": 13
+  },
+  {
+    "id": 283,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-11-14T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 51,
+    "userId": 9
+  },
+  {
+    "id": 285,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-11-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 52,
+    "userId": 16
+  },
+  {
+    "id": 291,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-11-01T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 53,
+    "userId": 16
+  },
+  {
+    "id": 297,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-11-09T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 54,
+    "userId": 1
+  },
+  {
+    "id": 293,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-11-02T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 54,
+    "userId": 10
+  },
+  {
+    "id": 300,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-11-26T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 54,
+    "userId": 1
+  },
+  {
+    "id": 304,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-11-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 54,
+    "userId": 15
+  },
+  {
+    "id": 307,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-11-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 54,
+    "userId": 6
+  },
+  {
+    "id": 312,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-11-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 54,
+    "userId": 13
+  },
+  {
+    "id": 481,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-04T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 81,
+    "userId": 2
+  },
+  {
+    "id": 482,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-10T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 8
+  },
+  {
+    "id": 495,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-27T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 18
+  },
+  {
+    "id": 503,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-12-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 82,
+    "userId": 13
+  },
+  {
+    "id": 507,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-12-03T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 3
+  },
+  {
+    "id": 519,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 4
+  },
+  {
+    "id": 524,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-17T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 83,
+    "userId": 21
+  },
+  {
+    "id": 536,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-10T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 84,
+    "userId": 9
+  },
+  {
+    "id": 538,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-09T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 84,
+    "userId": 9
+  },
+  {
+    "id": 549,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-22T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 85,
+    "userId": 10
+  },
+  {
+    "id": 551,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 85,
+    "userId": 10
+  },
+  {
+    "id": 554,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-27T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 86,
+    "userId": 2
+  },
+  {
+    "id": 557,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-30T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 86,
+    "userId": 10
+  },
+  {
+    "id": 558,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-09T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 87,
+    "userId": 14
+  },
+  {
+    "id": 560,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-12-07T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 87,
+    "userId": 11
+  },
+  {
+    "id": 563,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-08T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 88,
+    "userId": 20
+  },
+  {
+    "id": 564,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-12-07T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 88,
+    "userId": 6
+  },
+  {
+    "id": 569,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2024-12-20T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 89,
+    "userId": 14
+  },
+  {
+    "id": 570,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-12-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 89,
+    "userId": 8
+  },
+  {
+    "id": 577,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 91,
+    "userId": 8
+  },
+  {
+    "id": 579,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-23T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 91,
+    "userId": 6
+  },
+  {
+    "id": 582,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 93,
+    "userId": 14
+  },
+  {
+    "id": 583,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 93,
+    "userId": 11
+  },
+  {
+    "id": 591,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-12-08T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 94,
+    "userId": 6
+  },
+  {
+    "id": 592,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-07T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 94,
+    "userId": 3
+  },
+  {
+    "id": 595,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-09T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 95,
+    "userId": 16
+  },
+  {
+    "id": 596,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 96,
+    "userId": 2
+  },
+  {
+    "id": 598,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-29T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 97,
+    "userId": 7
+  },
+  {
+    "id": 600,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-28T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 97,
+    "userId": 13
+  },
+  {
+    "id": 607,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2024-12-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 99,
+    "userId": 5
+  },
+  {
+    "id": 608,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-06T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 99,
+    "userId": 15
+  },
+  {
+    "id": 610,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-12-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 100,
+    "userId": 21
+  },
+  {
+    "id": 613,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2024-12-29T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 101,
+    "userId": 14
+  },
+  {
+    "id": 615,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 101,
+    "userId": 12
+  },
+  {
+    "id": 616,
+    "textAnswer": null,
+    "numericAnswer": 10,
+    "type": "RANGE",
+    "createdAt": "2024-12-31T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 102,
+    "userId": 5
+  },
+  {
+    "id": 617,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2024-12-02T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 103,
+    "userId": 12
+  },
+  {
+    "id": 619,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-12-03T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 103,
+    "userId": 18
+  },
+  {
+    "id": 623,
+    "textAnswer": null,
+    "numericAnswer": 6,
+    "type": "RANGE",
+    "createdAt": "2024-12-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 104,
+    "userId": 8
+  },
+  {
+    "id": 629,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2024-12-23T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 104,
+    "userId": 13
+  },
+  {
+    "id": 640,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-10T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 107,
+    "userId": 1
+  },
+  {
+    "id": 647,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 107,
+    "userId": 8
+  },
+  {
+    "id": 652,
+    "textAnswer": null,
+    "numericAnswer": 7,
+    "type": "RANGE",
+    "createdAt": "2025-01-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 108,
+    "userId": 1
+  },
+  {
+    "id": 658,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-01-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 108,
+    "userId": 5
+  },
+  {
+    "id": 678,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 3
+  },
+  {
+    "id": 679,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-01-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 110,
+    "userId": 5
+  },
+  {
+    "id": 727,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-01-11T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 118,
+    "userId": 18
+  },
+  {
+    "id": 750,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-02T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 4
+  },
+  {
+    "id": 751,
+    "textAnswer": null,
+    "numericAnswer": 2,
+    "type": "RANGE",
+    "createdAt": "2025-02-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 3
+  },
+  {
+    "id": 753,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2025-02-18T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 10
+  },
+  {
+    "id": 754,
+    "textAnswer": null,
+    "numericAnswer": 2,
+    "type": "RANGE",
+    "createdAt": "2025-02-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 2
+  },
+  {
+    "id": 757,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2025-02-15T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 12
+  },
+  {
+    "id": 761,
+    "textAnswer": null,
+    "numericAnswer": 2,
+    "type": "RANGE",
+    "createdAt": "2025-02-27T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 2
+  },
+  {
+    "id": 765,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-09T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 9
+  },
+  {
+    "id": 773,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2025-02-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 126,
+    "userId": 1
+  },
+  {
+    "id": 776,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-03T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 127,
+    "userId": 7
+  },
+  {
+    "id": 788,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 127,
+    "userId": 19
+  },
+  {
+    "id": 792,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-24T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 127,
+    "userId": 1
+  },
+  {
+    "id": 793,
+    "textAnswer": null,
+    "numericAnswer": 4,
+    "type": "RANGE",
+    "createdAt": "2025-02-25T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 127,
+    "userId": 14
+  },
+  {
+    "id": 798,
+    "textAnswer": null,
+    "numericAnswer": 3,
+    "type": "RANGE",
+    "createdAt": "2025-02-21T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 128,
+    "userId": 5
+  },
+  {
+    "id": 799,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-02T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 129,
+    "userId": 3
+  },
+  {
+    "id": 800,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-01T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 129,
+    "userId": 8
+  },
+  {
+    "id": 810,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-10T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 130,
+    "userId": 5
+  },
+  {
+    "id": 816,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-02-19T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 130,
+    "userId": 21
+  },
+  {
+    "id": 818,
+    "textAnswer": null,
+    "numericAnswer": 5,
+    "type": "RANGE",
+    "createdAt": "2025-02-16T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 130,
+    "userId": 9
+  },
+  {
+    "id": 823,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-02-03T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 131,
+    "userId": 6
+  },
+  {
+    "id": 825,
+    "textAnswer": null,
+    "numericAnswer": 9,
+    "type": "RANGE",
+    "createdAt": "2025-02-01T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 131,
+    "userId": 6
+  },
+  {
+    "id": 832,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-13T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 131,
+    "userId": 18
+  },
+  {
+    "id": 836,
+    "textAnswer": null,
+    "numericAnswer": 8,
+    "type": "RANGE",
+    "createdAt": "2025-02-22T00:00:00.000Z",
+    "questionId": 1,
+    "patientProfileId": 132,
+    "userId": 11
+  }
+]

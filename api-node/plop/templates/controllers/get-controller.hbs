@@ -1,0 +1,25 @@
+import { FastifyReply, FastifyRequest } from 'fastify'
+import { {{pascalCase model}}Repository } from '@/repositories/{{kebabCase model}}-repository'
+import { Get{{pascalCase model}}UseCase } from '@/use-cases/{{kebabCase model}}/get-{{kebabCase model}}-use-case'
+
+export async function Get{{pascalCase model}}Controller(
+  request: FastifyRequest<{
+    Params: { id: string }
+  }>,
+  reply: FastifyReply,
+) {
+  const { id } = request.params
+
+  const {{camelCase model}}Repository = new {{pascalCase model}}Repository()
+  const get{{pascalCase model}}UseCase = new Get{{pascalCase model}}UseCase({{camelCase model}}Repository)
+
+  const result = await get{{pascalCase model}}UseCase.execute({
+    params: { id: parseInt(id) }
+  })
+
+  if (!result.success) {
+    return reply.status(404).send({ message: result.error })
+  }
+
+  return reply.status(200).send(result.data)
+}

@@ -1,0 +1,27 @@
+import { Prisma } from '@prisma/client'
+import { {{pascalCase model}}Repository, IReqParams } from '../../repositories/{{kebabCase model}}-repository'
+
+interface UpdateRequest {
+  params: IReqParams
+  data: Prisma.{{pascalCase model}}UpdateInput
+}
+
+export class Update{{pascalCase model}}UseCase {
+  constructor(private {{camelCase model}}Repository: {{pascalCase model}}Repository) {}
+
+  async execute({ params, data }: UpdateRequest) {
+    try {
+      const result = await this.{{camelCase model}}Repository.put(params, data)
+      
+      return {
+        success: true,
+        data: result
+      }
+    } catch (error) {
+      return {
+        success: false,
+        error: error instanceof Error ? error.message : 'Erro ao atualizar {{camelCase model}}'
+      }
+    }
+  }
+}

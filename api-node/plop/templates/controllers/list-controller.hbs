@@ -1,0 +1,33 @@
+import { FastifyReply, FastifyRequest } from 'fastify'
+import { {{pascalCase model}}Repository } from '@/repositories/{{kebabCase model}}-repository'
+import { List{{pascalCase model}}UseCase } from '@/use-cases/{{kebabCase model}}/list-{{kebabCase model}}-use-case'
+
+export async function List{{pascalCase model}}sController(
+  request: FastifyRequest<{
+    Querystring: {
+      term?: string
+      fields?: string
+      order?: string
+    }
+  }>,
+  reply: FastifyReply,
+) {
+  const { term, fields, order } = request.query
+
+  const {{camelCase model}}Repository = new {{pascalCase model}}Repository()
+  const list{{pascalCase model}}UseCase = new List{{pascalCase model}}UseCase({{camelCase model}}Repository)
+
+  const result = await list{{pascalCase model}}UseCase.execute({
+    query: {
+      term,
+      fields: fields ? fields.split(',') : undefined,
+      order
+    }
+  })
+
+  if (!result.success) {
+    return reply.status(400).send({ message: result.error })
+  }
+
+  return reply.status(200).send(result.data)
+}

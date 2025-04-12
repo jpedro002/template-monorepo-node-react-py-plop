@@ -1,0 +1,42 @@
+import { FastifyReply, FastifyRequest } from 'fastify'
+import { {{pascalCase model}}Repository } from '@/repositories/{{kebabCase model}}-repository'
+import { Fetch{{pascalCase model}}UseCase } from '@/use-cases/{{kebabCase model}}/fetch-{{kebabCase model}}-use-case'
+
+export async function Fetch{{pascalCase model}}sController(
+  request: FastifyRequest<{
+    Querystring: {
+      term?: string
+      fields?: string
+      order?: string
+      page?: number
+      pageSize?: number
+      itens?: string
+    }
+  }>,
+  reply: FastifyReply,
+) {
+  const { term, fields, order, page = 1, pageSize = 20, itens } = request.query
+
+  const {{camelCase model}}Repository = new {{pascalCase model}}Repository()
+  const fetch{{pascalCase model}}UseCase = new Fetch{{pascalCase model}}UseCase({{camelCase model}}Repository)
+
+  const result = await fetch{{pascalCase model}}UseCase.execute({
+    query: {
+      term,
+      fields: fields ? fields.split(',') : undefined,
+      order,
+      page: Number(page),
+      pageSize: Number(pageSize),
+      itens: itens ? itens.split(',').map(Number) : undefined
+    }
+  })
+
+  if (!result.success) {
+    return reply.status(400).send({ message: result.error })
+  }
+
+  return reply.status(200).send({
+    data: result.data,
+    pagination: result.pagination
+  })
+}

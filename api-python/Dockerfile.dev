@@ -1,0 +1,18 @@
+FROM template-py-base
+
+WORKDIR /app
+
+COPY Pipfile ./
+COPY Pipfile.lock* ./
+
+RUN if [ -f Pipfile.lock ]; then \
+    pipenv sync --system; \
+    else \
+    pipenv install --skip-lock; \
+    fi
+
+COPY . .
+
+EXPOSE 5000
+
+CMD [ "pipenv", "run", "start" ]

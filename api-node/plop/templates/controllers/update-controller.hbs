@@ -1,0 +1,34 @@
+import { FastifyReply, FastifyRequest } from 'fastify'
+import { {{pascalCase model}}Repository } from '@/repositories/{{kebabCase model}}-repository'
+import { Update{{pascalCase model}}UseCase } from '@/use-cases/{{kebabCase model}}/update-{{kebabCase model}}-use-case'
+import { z } from 'zod'
+
+// Importação do schema gerado pela lib zod-prisma-types
+import { {{pascalCase model}}UpdateInputSchema } from '@/schemas/zod'
+
+export async function Update{{pascalCase model}}Controller(
+  request: FastifyRequest<{
+    Params: { id: string }
+    Body: z.infer<typeof {{pascalCase model}}UpdateInputSchema>
+  }>,
+  reply: FastifyReply,
+) {
+  const { id } = request.params
+  const { body } = request
+
+  const parsed{{pascalCase model}} = {{pascalCase model}}UpdateInputSchema.parse(body)
+  
+  const {{camelCase model}}Repository = new {{pascalCase model}}Repository()
+  const update{{pascalCase model}}UseCase = new Update{{pascalCase model}}UseCase({{camelCase model}}Repository)
+
+  const result = await update{{pascalCase model}}UseCase.execute({
+    params: { id: parseInt(id) },
+    data: parsed{{pascalCase model}}
+  })
+
+  if (!result.success) {
+    return reply.status(400).send({ message: result.error })
+  }
+
+  return reply.status(200).send(result.data)
+}

@@ -1,0 +1,31 @@
+import { FastifyReply, FastifyRequest } from 'fastify'
+import { {{pascalCase model}}Repository } from '@/repositories/{{kebabCase model}}-repository'
+import { Create{{pascalCase model}}UseCase } from '@/use-cases/{{kebabCase model}}/create-{{kebabCase model}}-use-case'
+import { z } from 'zod'
+
+// Importação do schema gerado pela lib zod-prisma
+import { {{pascalCase model}}CreateInputSchema } from '@/schemas/zod'
+
+export async function Create{{pascalCase model}}Controller(
+  request: FastifyRequest<{
+    Body: z.infer<typeof {{pascalCase model}}CreateInputSchema>
+  }>,
+  reply: FastifyReply,
+) {
+  const { body } = request
+
+  const parsed{{pascalCase model}} = {{pascalCase model}}CreateInputSchema.parse(body)
+  
+  const {{camelCase model}}Repository = new {{pascalCase model}}Repository()
+  const create{{pascalCase model}}UseCase = new Create{{pascalCase model}}UseCase({{camelCase model}}Repository)
+
+  const result = await create{{pascalCase model}}UseCase.execute({
+    data: parsed{{pascalCase model}}
+  })
+
+  if (!result.success) {
+    return reply.status(400).send({ message: result.error })
+  }
+
+  return reply.status(201).send(result.data)
+}

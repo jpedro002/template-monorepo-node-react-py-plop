@@ -1,0 +1,75 @@
+services:
+  frontend:
+    container_name: ${FRONTEND_CONTAINER_NAME:-frontend_dev} 
+    build:
+      context: ./front-end
+      dockerfile: ${FRONTEND_DOCKERFILE:-Dockerfile.dev}
+    env_file:
+      - ./front-end/.env
+    ports:
+      - "${FRONTEND_PORT:-5173}:${FRONTEND_INTERNAL_PORT:-5173}"
+    restart: always
+    volumes:
+      - ./front-end:/app 
+      - /app/node_modules
+      
+  api:
+    container_name: ${API_NODE_CONTAINER_NAME:-api_node_dev}
+    build:
+      context: ./api-node
+      dockerfile: ${API_NODE_DOCKERFILE:-Dockerfile.dev}
+    env_file:
+      - ./api-node/.env
+    ports:
+      - "${API_NODE_PORT:-3000}:${API_NODE_INTERNAL_PORT:-3000}"
+      - "${PRISMA_STUDIO_PORT:-5555}:5555"
+    restart: always
+    depends_on:
+      - postgresql
+    networks:
+      - network_name
+    volumes:
+      - ./api-node:/app  
+      - /app/node_modules
+    environment:
+      - NODE_ENV=${NODE_ENV:-development}
+
+  postgresql:
+    container_name: ${DB_CONTAINER_NAME:-postgresql_db}
+    image: bitnami/postgresql:latest
+    environment:
+      - POSTGRESQL_USERNAME=${POSTGRESQL_USERNAME}
+      - POSTGRESQL_PASSWORD=${POSTGRESQL_PASSWORD}
+      - POSTGRESQL_DATABASE=${POSTGRESQL_DATABASE}
+      - POSTGRESQL_PORT_NUMBER=${POSTGRESQL_PORT_NUMBER}
+    restart: always
+    ports:
+      - "${POSTGRESQL_HOST_PORT:-5432}:${POSTGRESQL_PORT_NUMBER:-5432}"
+    volumes:
+      - postgresql_data:/bitnami/postgresql
+    networks:
+      - network_name
+
+  python:
+    container_name: ${API_PYTHON_CONTAINER_NAME:-api_python_dev}
+    build:
+      context: ./api-python  
+      dockerfile: ${API_PYTHON_DOCKERFILE:-Dockerfile.dev}
+    restart: always
+    ports:
+      - "${API_PYTHON_PORT:-5000}:${API_PYTHON_INTERNAL_PORT:-5000}"
+    environment:
+      - FLASK_ENV=${FLASK_ENV:-development}
+    volumes:
+      - ./api-python:/app
+    networks:
+      - network_name
+
+volumes:
+  postgresql_data:
+    driver: local
+
+
+networks:
+  network_name:
+    driver: bridge
