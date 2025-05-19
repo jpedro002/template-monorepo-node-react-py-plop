@@ -1,0 +1,61 @@
+import { FastifyReply, FastifyRequest } from 'fastify'
+import { {{pascalCase model}}Repository } from '@/repositories/{{kebabCase model}}-repository'
+import { {{pascalCase routeName}}{{pascalCase model}}UseCase } from '@/use-cases/{{kebabCase model}}/{{kebabCase routeName}}-{{kebabCase model}}-use-case'
+{{#if needsBody}}
+import { z } from 'zod'
+// import { {{pascalCase model}}Schema } from '@/schemas/zod'
+{{/if}}
+
+export async function {{pascalCase routeName}}{{pascalCase model}}Controller(
+  request: FastifyRequest<{
+    {{#if needsParams}}
+    Params: {
+      id: string
+    }
+    {{/if}}
+    {{#if needsBody}}
+    Body: any // Substitua por z.infer<typeof SeuSchema>
+    {{/if}}
+  }>,
+  reply: FastifyReply,
+) {
+  {{#if needsParams}}
+  const { id } = request.params
+  {{/if}}
+  {{#if needsBody}}
+  const { body } = request
+  
+  // Validar com Zod se necessário
+  // const parsedData = YourZodSchema.parse(body)
+  {{/if}}
+
+  const {{camelCase model}}Repository = new {{pascalCase model}}Repository()
+  const {{camelCase routeName}}{{pascalCase model}}UseCase = new {{pascalCase routeName}}{{pascalCase model}}UseCase({{camelCase model}}Repository)
+
+  const result = await {{camelCase routeName}}{{pascalCase model}}UseCase.execute({
+    {{#if needsParams}}
+    params: {
+      id: parseInt(id),
+    },
+    {{/if}}
+    {{#if needsBody}}
+    data: body, // ou parsedData se usar validação
+    {{/if}}
+  })
+
+  if (!result.success) {
+    return reply.status(400).send({ message: result.error })
+  }
+
+  {{#if method}}
+  {{#if (eq method 'post')}}
+  return reply.status(201).send(result.data)
+  {{else if (eq method 'delete')}}
+  return reply.status(204).send()
+  {{else}}
+  return reply.status(200).send({{#if (eq method 'get')}}result.data{{else}}{ success: true }{{/if}})
+  {{/if}}
+  {{else}}
+  return reply.status(200).send({ success: true })
+  {{/if}}
+}

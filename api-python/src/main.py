@@ -28,7 +28,7 @@ def allowed_file(filename):
 
 @app.route("/ping", methods=["GET"])
 def ping():
-    return jsonify({"message": "pong py"})
+    return jsonify({"message": "pong"})
 
 
 if __name__ == "__main__":

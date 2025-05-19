@@ -3,18 +3,18 @@ import { CardRepository } from '@/repositories/card-repository'
 import { CreateCardUseCase } from '@/use-cases/card/create-card-use-case'
 import { z } from 'zod'
 
-// Importação do schema gerado pela lib zod-prisma
-import { CardCreateInputSchema } from '@/schemas/zod'
+
+import { CardCreateManyInputSchema } from '@/schemas/zod'
 
 export async function CreateCardController(
   request: FastifyRequest<{
-    Body: z.infer<typeof CardCreateInputSchema>
+    Body: z.infer<typeof CardCreateManyInputSchema>
   }>,
   reply: FastifyReply,
 ) {
   const { body } = request
 
-  const parsedCard = CardCreateInputSchema.parse(body)
+  const parsedCard = CardCreateManyInputSchema.parse(body)
   
   const cardRepository = new CardRepository()
   const createCardUseCase = new CreateCardUseCase(cardRepository)

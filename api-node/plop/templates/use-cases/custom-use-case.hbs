@@ -1,0 +1,79 @@
+import { {{pascalCase model}}Repository } from '@/repositories/{{kebabCase model}}-repository'
+
+interface {{pascalCase routeName}}{{pascalCase model}}UseCaseRequest {
+  {{#if needsParams}}
+  params: {
+    id: number
+  }
+  {{/if}}
+  {{#if needsBody}}
+  data: any // Você pode definir a tipagem exata baseada no schema Zod
+  {{/if}}
+}
+
+interface {{pascalCase routeName}}{{pascalCase model}}UseCaseResponse {
+  success: boolean
+  {{#if method}}
+  {{#if (eq method 'get')}}
+  data?: any
+  {{/if}}
+  {{/if}}
+  error?: string
+}
+
+export class {{pascalCase routeName}}{{pascalCase model}}UseCase {
+  constructor(private {{camelCase model}}Repository: {{pascalCase model}}Repository) {}
+
+  async execute({
+    {{#if needsParams}}
+    params,
+    {{/if}}
+    {{#if needsBody}}
+    data,
+    {{/if}}
+  }: {{pascalCase routeName}}{{pascalCase model}}UseCaseRequest): Promise<{{pascalCase routeName}}{{pascalCase model}}UseCaseResponse> {
+    try {
+      // Implemente a lógica do use case aqui
+      {{#if method}}
+      {{#if (eq method 'get')}}
+      const result = await this.{{camelCase model}}Repository.one({ id: params.id })
+      return {
+        success: true,
+        data: result
+      }
+      {{else if (eq method 'post')}}
+      const result = await this.{{camelCase model}}Repository.post(data)
+      return {
+        success: true,
+        data: result
+      }
+      {{else if (eq method 'put')}}
+      const result = await this.{{camelCase model}}Repository.put(params, data)
+      return {
+        success: true,
+        data: result
+      }
+      {{else if (eq method 'delete')}}
+      await this.{{camelCase model}}Repository.del(params)
+      return {
+        success: true
+      }
+      {{else}}
+      // Implementação padrão
+      return {
+        success: true
+      }
+      {{/if}}
+      {{else}}
+      return {
+        success: true
+      }
+      {{/if}}
+    } catch (error) {
+      return {
+        success: false,
+        error: error instanceof Error ? error.message : 'Unknown error'
+      }
+    }
+  }
+}

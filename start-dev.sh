@@ -1,1 +1,1 @@
-docker compose -f docker-compose.dev.yml up --build -d 
+docker compose -f docker-compose.dev.yml up  python --build -d --no-deps

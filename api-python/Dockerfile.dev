@@ -2,17 +2,12 @@ FROM template-py-base
 
 WORKDIR /app
 
-COPY Pipfile ./
-COPY Pipfile.lock* ./
+COPY requirements.txt ./
 
-RUN if [ -f Pipfile.lock ]; then \
-    pipenv sync --system; \
-    else \
-    pipenv install --skip-lock; \
-    fi
+RUN uv pip install --system -r requirements.txt 
 
 COPY . .
 
 EXPOSE 5000
 
-CMD [ "pipenv", "run", "start" ]
+CMD [ "flask", "--app", "src/main", "run", "--debug", "--host=0.0.0.0" ]

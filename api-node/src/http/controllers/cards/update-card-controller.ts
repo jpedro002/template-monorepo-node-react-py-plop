@@ -3,20 +3,21 @@ import { CardRepository } from '@/repositories/card-repository'
 import { UpdateCardUseCase } from '@/use-cases/card/update-card-use-case'
 import { z } from 'zod'
 
+
 // Importação do schema gerado pela lib zod-prisma-types
-import { CardUpdateInputSchema } from '@/schemas/zod'
+import { CardUpdateManyMutationInputSchema } from '@/schemas/zod'
 
 export async function UpdateCardController(
   request: FastifyRequest<{
     Params: { id: string }
-    Body: z.infer<typeof CardUpdateInputSchema>
+    Body: z.infer<typeof CardUpdateManyMutationInputSchema>
   }>,
   reply: FastifyReply,
 ) {
   const { id } = request.params
   const { body } = request
 
-  const parsedCard = CardUpdateInputSchema.parse(body)
+  const parsedCard = CardUpdateManyMutationInputSchema.parse(body)
   
   const cardRepository = new CardRepository()
   const updateCardUseCase = new UpdateCardUseCase(cardRepository)

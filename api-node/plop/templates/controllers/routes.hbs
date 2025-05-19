@@ -11,8 +11,8 @@ import { Delete{{pascalCase model}}Controller } from './delete-{{kebabCase model
 
 // Importação dos schemas gerados pela lib zod-prisma
 import { 
-  {{pascalCase model}}CreateInputSchema,
-  {{pascalCase model}}UpdateInputSchema,
+  {{pascalCase model}}CreateManyInputSchema,
+  {{pascalCase model}}UpdateManyMutationInputSchema,
   {{pascalCase model}}Schema
 } from '@/schemas/zod'
 
@@ -24,7 +24,7 @@ export async function {{camelCase model}}Routes(fastify: FastifyInstance) {
     schema: {
       tags: ['{{pascalCase model}}s'],
       description: 'Create a new {{camelCase model}}',
-      body: {{pascalCase model}}CreateInputSchema,
+      body: {{pascalCase model}}CreateManyInputSchema,
       response: {
         201: {{pascalCase model}}Schema,
         400: z.object({
@@ -45,7 +45,7 @@ export async function {{camelCase model}}Routes(fastify: FastifyInstance) {
       params: z.object({
         id: z.string().transform(val => parseInt(val)),
       }),
-      body: {{pascalCase model}}UpdateInputSchema,
+      body: {{pascalCase model}}UpdateManyMutationInputSchema,
       response: {
         200: {{pascalCase model}}Schema,
         400: z.object({

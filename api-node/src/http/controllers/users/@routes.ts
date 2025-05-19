@@ -67,25 +67,119 @@ export async function userRoutes(fastify: FastifyInstance) {
 	fastify.delete('/:id', {
 		preValidation: [fastify.authenticate, roleGuard(['ADMIN'])],
 		handler: deleteUserController,
+		schema: {
+			tags: ['Users'],
+			description: 'Delete a user by ID',
+			params: z.object({
+				id: z.string().transform((val) => parseInt(val)),
+			}),
+			response: {
+				204: z.null(),
+				404: z.object({
+					message: z.string(),
+				}),
+			},
+		},
 	})
 
 	fastify.put('/:id', {
 		preValidation: [fastify.authenticate, roleGuard(['ADMIN'])],
 		handler: updateUserController,
+		schema: {
+			tags: ['Users'],
+			description: 'Update user information by ID',
+			params: z.object({
+				id: z.string().transform((val) => parseInt(val)),
+			}),
+			body: z.object({
+				name: z.string().min(1).optional(),
+				email: z.string().email().optional(),
+				role: z.nativeEnum(Role).optional(),
+			}),
+			response: {
+				200: z.object({
+					id: z.number(),
+					name: z.string(),
+					email: z.string().email(),
+					role: z.nativeEnum(Role),
+				}),
+				404: z.object({
+					message: z.string(),
+				}),
+				400: z.object({
+					message: z.string(),
+					errors: z.any().optional(),
+				}),
+			},
+		},
 	})
 
 	fastify.patch('/resetPassword/:id', {
 		preValidation: [fastify.authenticate, roleGuard(['ADMIN'])],
 		handler: resetPasswordController,
+		schema: {
+			tags: ['Users'],
+			description: 'Reset user password by ID',
+			params: z.object({
+				id: z.string().transform((val) => parseInt(val)),
+			}),
+			response: {
+				200: z.object({
+					message: z.string(),
+				}),
+				404: z.object({
+					message: z.string(),
+				}),
+			},
+		},
 	})
 
 	fastify.put('/me/email-and-name', {
 		preValidation: [fastify.authenticate],
 		handler: seftUpdateEmailAndNameController,
+		schema: {
+			tags: ['Users'],
+			description: 'Update current user email and name',
+			body: z.object({
+				name: z.string().min(1).optional(),
+				email: z.string().email().optional(),
+			}),
+			response: {
+				200: z.object({
+					name: z.string(),
+					email: z.string().email(),
+					id: z.number(),
+				}),
+				400: z.object({
+					message: z.string(),
+					errors: z.any().optional(),
+				}),
+			},
+		},
 	})
 
 	fastify.put('/me/password', {
 		preValidation: [fastify.authenticate],
 		handler: updatePasswordController,
+		schema: {
+			tags: ['Users'],
+			description: 'Update current user password',
+			body: z.object({
+				currentPassword: z.string().min(6),
+				newPassword: z.string().min(6),
+			}),
+			response: {
+				200: z.object({
+					message: z.string(),
+				}),
+				400: z.object({
+					message: z.string(),
+					errors: z.any().optional(),
+				}),
+				401: z.object({
+					message: z.string(),
+				}),
+			},
+		},
 	})
 }

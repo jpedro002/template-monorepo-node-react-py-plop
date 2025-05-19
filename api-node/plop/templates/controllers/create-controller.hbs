@@ -3,18 +3,18 @@ import { {{pascalCase model}}Repository } from '@/repositories/{{kebabCase model
 import { Create{{pascalCase model}}UseCase } from '@/use-cases/{{kebabCase model}}/create-{{kebabCase model}}-use-case'
 import { z } from 'zod'
 
-// Importação do schema gerado pela lib zod-prisma
-import { {{pascalCase model}}CreateInputSchema } from '@/schemas/zod'
+
+import { {{pascalCase model}}CreateManyInputSchema } from '@/schemas/zod'
 
 export async function Create{{pascalCase model}}Controller(
   request: FastifyRequest<{
-    Body: z.infer<typeof {{pascalCase model}}CreateInputSchema>
+    Body: z.infer<typeof {{pascalCase model}}CreateManyInputSchema>
   }>,
   reply: FastifyReply,
 ) {
   const { body } = request
 
-  const parsed{{pascalCase model}} = {{pascalCase model}}CreateInputSchema.parse(body)
+  const parsed{{pascalCase model}} = {{pascalCase model}}CreateManyInputSchema.parse(body)
   
   const {{camelCase model}}Repository = new {{pascalCase model}}Repository()
   const create{{pascalCase model}}UseCase = new Create{{pascalCase model}}UseCase({{camelCase model}}Repository)

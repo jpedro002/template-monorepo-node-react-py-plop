@@ -10,7 +10,8 @@
 		"start": "prisma generate && prisma migrate deploy && node dist/server.js",
 		"lint": "biome lint --fix",
 		"prisma:migrate": "prisma migrate dev --name",
-		"generate:zod": "prisma generate && zod-prisma-types generate"
+		"generate:zod": "prisma generate && zod-prisma-types generate",
+		"generate:plop": "cross-env NODE_OPTIONS='--import tsx' plop --plopfile=plopfile.ts"
 	},
 	"zod-prisma-types": {
 		"output": "src/schemas/zod",
@@ -41,6 +42,7 @@
 		"@biomejs/biome": "1.9.2",
 		"@faker-js/faker": "^9.6.0",
 		"@types/node": "^22.7.3",
+		"cross-env": "^7.0.3",
 		"dotenv": "^16.4.5",
 		"plop": "^4.0.1",
 		"prisma": "^6.5.0",

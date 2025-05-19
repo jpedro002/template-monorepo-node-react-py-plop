@@ -10,9 +10,9 @@ datasource db {
 generator zod {
   provider                  = "zod-prisma-types"
   output                    = "../src/schemas/zod"
-  createRelationValuesTypes = true
+  createRelationValuesTypes = false
+  createPartialTypes        = true
   addInputTypeValidation    = true
-  // Garantir que os inputs gerados incluam validações específicas
   validateWhereUniqueInput  = true
 }
 

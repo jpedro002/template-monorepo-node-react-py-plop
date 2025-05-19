@@ -1,0 +1,39 @@
+  // Rota para {{routeName}} {{camelCase model}}
+  fastify.{{method}}('{{routePath}}', {
+    preValidation: [fastify.authenticate, roleGuard(['ADMIN'])],
+    handler: {{pascalCase routeName}}{{pascalCase model}}Controller,
+    schema: {
+      tags: ['{{pascalCase model}}s'],
+      description: '{{pascalCase routeName}} {{camelCase model}}',
+      {{#if needsParams}}
+      params: z.object({
+        id: z.string().transform(val => parseInt(val)),
+      }),
+      {{/if}}
+      {{#if needsBody}}
+      body: z.object({
+        // Defina o schema do corpo da requisição
+      }),
+      {{/if}}
+      response: {
+        {{#if (eq method 'delete')}}
+        204: z.null(),
+        {{else}}
+        200: z.object({
+          // Defina o schema da resposta
+          {{#if (eq method 'get')}}
+          // data: ColecaoSchema,
+          {{else}}
+          success: z.boolean(),
+          {{/if}}
+        }),
+        {{/if}}
+        400: z.object({
+          message: z.string(),
+          errors: z.any().optional(),
+        }),
+      },
+    },
+  })
+
+}
