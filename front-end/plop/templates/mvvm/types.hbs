@@ -1,0 +1,7 @@
+import { use{{pascalCase name}}Model } from './{{pascalCase name}}.model'
+
+export interface Use{{pascalCase name}}ModelProps {
+  {{serviceName}}: {{serviceInterface}}
+}
+
+export type {{pascalCase name}}ViewProps = ReturnType<typeof use{{pascalCase name}}Model>

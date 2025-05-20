@@ -1,0 +1,30 @@
+export interface {{pascalCase name}} {
+  id: number;
+  // TODO: Adicione os atributos específicos da entidade {{pascalCase name}} aqui
+}
+
+export interface Create{{pascalCase name}}Dto {
+  // TODO: Adicione os atributos necessários para criação de {{pascalCase name}} aqui (sem id)
+}
+
+export interface Update{{pascalCase name}}Dto {
+  // TODO: Adicione os atributos que podem ser atualizados de {{pascalCase name}} aqui
+}
+
+export interface {{pascalCase name}}Filters {
+  term?: string;
+  fields?: string[];
+  order?: string;
+  page?: number;
+  pageSize?: number;
+  itens?: number[];
+}
+
+export interface Paginated{{pascalCase name}}Response {
+  data: {{pascalCase name}}[];
+  pagination: {
+    page: number;
+    rowCount: number;
+    pageCount: number;
+  }
+}

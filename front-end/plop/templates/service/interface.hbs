@@ -1,0 +1,33 @@
+import { {{pascalCase name}}, Create{{pascalCase name}}Dto, Update{{pascalCase name}}Dto, {{pascalCase name}}Filters, Paginated{{pascalCase name}}Response } from './types';
+
+export interface I{{pascalCase name}}Service {
+  /**
+   * Cria um novo {{name}}
+   */
+  create(data: Create{{pascalCase name}}Dto): Promise<{{pascalCase name}}>;
+  
+  /**
+   * Obtém um {{name}} por ID
+   */
+  get(id: string): Promise<{{pascalCase name}}>;
+  
+  /**
+   * Lista todos os {{name}}s sem paginação
+   */
+  list(filters?: {{pascalCase name}}Filters): Promise<{{pascalCase name}}[]>;
+  
+  /**
+   * Busca {{name}}s com paginação e filtros avançados
+   */
+  fetch(filters?: {{pascalCase name}}Filters): Promise<Paginated{{pascalCase name}}Response>;
+  
+  /**
+   * Atualiza um {{name}} existente
+   */
+  update(id: string, data: Update{{pascalCase name}}Dto): Promise<{{pascalCase name}}>;
+  
+  /**
+   * Exclui um {{name}} por ID
+   */
+  delete(id: string): Promise<void>;
+}

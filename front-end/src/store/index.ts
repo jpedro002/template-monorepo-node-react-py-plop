@@ -9,17 +9,12 @@ import counterSlice from './slices/counterSlice'
 import { useDispatch } from 'react-redux'
 import authSlice from './slices/authSlice'
 
-import bedsSlice from './slices/bedsSlice'
-import dashboardDataSlice from './slices/dashboardDataSlice'
-
 export const store = configureStore({
 	reducer: {
 		counterSlice,
 		appHeaderTitleSlice,
 		appUsers: appUsersSlice,
 		auth: authSlice,
-		beds: bedsSlice,
-		ulcerReport: dashboardDataSlice,
 	},
 })
 

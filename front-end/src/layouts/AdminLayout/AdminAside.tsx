@@ -1,4 +1,4 @@
-import { AppWindow, AreaChart, ShieldMinus, Triangle } from 'lucide-react'
+import { ShieldMinus, Triangle } from 'lucide-react'
 
 import { Button } from '@/components/ui/button/button'
 import { TooltipProvider } from '@/components/ui/tooltip'
@@ -20,16 +20,6 @@ export const AdminAside = () => {
 							to="/admin"
 							icon={<ShieldMinus className="size-5" />}
 							label="Admin"
-						/>
-						<CustomToolTip
-							to="/admin/ulcer-report"
-							icon={<AreaChart className="size-5" />}
-							label="Dashboard lesão por pressão"
-						/>
-						<CustomToolTip
-							to="/"
-							icon={<AppWindow className="size-5" />}
-							label="App"
 						/>
 					</nav>
 				</div>

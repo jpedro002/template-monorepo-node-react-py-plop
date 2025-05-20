@@ -46,7 +46,7 @@ export function CreateAccountModalView(props: ICreateAccountModalProps) {
 			</DialogTrigger>
 			<DialogContent
 				aria-describedby={undefined}
-				className="flex flex-col max-h-[100vh] overflow-auto rounded-lg scrollbar-hide"
+				className="flex flex-col max-h-screen overflow-auto rounded-lg scrollbar-hide"
 			>
 				<DialogHeader>
 					<DialogTitle>Criar Conta</DialogTitle>

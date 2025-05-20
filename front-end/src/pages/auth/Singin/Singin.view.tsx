@@ -45,7 +45,7 @@ export const SingInView = (props: SinginProps) => {
 									id="email"
 									type="email"
 									placeholder="m@example.com"
-									className="data-[haserror]:focus-visible:ring-red-500 data-[haserror]:border-red-500"
+									className="data-haserror:focus-visible:ring-red-500 data-haserror:border-red-500"
 									data-haserror={errors.email?.message}
 									{...register('email')}
 								/>
@@ -59,7 +59,7 @@ export const SingInView = (props: SinginProps) => {
 									id="password"
 									type={passwordVisibility ? 'text' : 'password'}
 									{...register('password')}
-									className="data-[haserror]:focus-visible:ring-red-500 data-[haserror]:border-red-500"
+									className="data-haserror:focus-visible:ring-red-500 data-haserror:border-red-500"
 									data-haserror={errors.password?.message}
 								/>
 								{errors.password && (

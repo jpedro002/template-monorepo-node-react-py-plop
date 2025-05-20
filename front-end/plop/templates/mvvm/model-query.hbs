@@ -1,0 +1,26 @@
+import { useQuery } from '@tanstack/react-query'
+import type { Use{{pascalCase name}}ModelProps } from './types'
+
+export function use{{pascalCase name}}Model({ {{serviceName}} }: Use{{pascalCase name}}ModelProps) {
+  const {
+    data = [],
+    isLoading,
+    error,
+    refetch,
+    isRefetching,
+  } = useQuery<WRITE_RETURN_TYPE, Error>({
+    queryKey: ['{{queryKey}}'],
+    queryFn: () => {{serviceName}}.{{queryFunction}}(),
+    staleTime: 1000 * 60 * 60, // 1 hora
+    refetchOnWindowFocus: false,
+    refetchOnMount: false,
+    retry: 1,
+  })
+
+  return {
+    {{#if (eq queryKey returnType)}}{{queryKey}}{{else}}data{{/if}},
+    isLoading: isLoading || isRefetching,
+    error,
+    refetch,
+  }
+}

@@ -1,0 +1,71 @@
+import { {{pascalCase name}}, Create{{pascalCase name}}Dto, Update{{pascalCase name}}Dto, {{pascalCase name}}Filters, Paginated{{pascalCase name}}Response } from './types';
+import { I{{pascalCase name}}Service } from './I{{pascalCase name}}Service';
+import { api } from '@/lib/axios'
+
+export class {{pascalCase name}}Service implements I{{pascalCase name}}Service {
+  private readonly baseUrl = `/{{kebabCase name}}`;
+
+  /**
+   * Cria um novo {{name}}
+   */
+  async create(data: Create{{pascalCase name}}Dto): Promise<{{pascalCase name}}> {
+    const response = await api.post<{{pascalCase name}}>(this.baseUrl, data);
+    return response.data;
+  }
+
+  /**
+   * Obtém um {{name}} por ID
+   */
+  async get(id: string): Promise<{{pascalCase name}}> {
+    const response = await api.get<{{pascalCase name}}>(`${this.baseUrl}/${id}`);
+    return response.data;
+  }
+
+  /**
+   * Lista todos os {{name}}s sem paginação
+   */
+  async list(filters: {{pascalCase name}}Filters = {}): Promise<{{pascalCase name}}[]> {
+    const { term, fields, order } = filters;
+    const params = {
+      term,
+      fields: Array.isArray(fields) ? fields : undefined,
+      order
+    };
+
+    const response = await api.get<{{pascalCase name}}[]>(this.baseUrl, { params });
+    return response.data;
+  }
+
+  /**
+   * Busca {{name}}s com paginação e filtros avançados
+   */
+  async fetch(filters: {{pascalCase name}}Filters = {}): Promise<Paginated{{pascalCase name}}Response> {
+    const { term, fields, order, page = 1, pageSize = 20, itens } = filters;
+    const params = {
+      term,
+      fields: Array.isArray(fields) ? fields : undefined,
+      order,
+      page,
+      pageSize,
+      itens: Array.isArray(itens) ? itens : undefined
+    };
+
+    const response = await api.get<Paginated{{pascalCase name}}Response>(`${this.baseUrl}/fetch`, { params });
+    return response.data;
+  }
+
+  /**
+   * Atualiza um {{name}} existente
+   */
+  async update(id: string, data: Update{{pascalCase name}}Dto): Promise<{{pascalCase name}}> {
+    const response = await api.put<{{pascalCase name}}>(`${this.baseUrl}/${id}`, data);
+    return response.data;
+  }
+
+  /**
+   * Exclui um {{name}} por ID
+   */
+  async delete(id: string): Promise<void> {
+    await api.delete(`${this.baseUrl}/${id}`);
+  }
+}
