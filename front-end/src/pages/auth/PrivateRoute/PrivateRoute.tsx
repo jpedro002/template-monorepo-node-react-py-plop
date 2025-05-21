@@ -20,12 +20,6 @@ export const PrivateRoute = ({ allowedRoles, children }: PrivateRouteProps) => {
 		)
 	}
 
-	if (allowedRoles.includes('NOT_LOGGED')) {
-		if (!token) {
-			return <>{children}</>
-		}
-	}
-
 	if (!token || !session) {
 		return <Navigate to="/auth" replace />
 	}

@@ -15,7 +15,7 @@ export const AuthLayout = () => {
 	}, [navigate, session, token])
 
 	return (
-		<div className="grid min-h-screen grid-cols-1 place-items-center antialiased">
+		<div className="flex min-h-screen justify-center items-center antialiased">
 			<Outlet />
 		</div>
 	)

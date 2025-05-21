@@ -7,7 +7,7 @@ export async function deleteUserController(
 	reply: FastifyReply,
 ) {
 	const deleteUserSchema = z.object({
-		id: z.string(),
+		id: z.number().min(1),
 	})
 
 	const { id } = deleteUserSchema.parse(request.params)

@@ -1,9 +1,28 @@
+import React, { Suspense, lazy } from 'react'
 import { Outlet, createBrowserRouter } from 'react-router-dom'
 
-import { LogOut, NotFound } from '@/pages/app'
+import { SpinnerLoading } from './components/SpinnerLoading'
+// Layouts e Providers (podem ser mantidos como importação direta se usados em todas as rotas)
 import { AdminLayout, AuthLayout, SessionProvider } from './layouts'
-import { ListUsers } from './pages/admin/'
-import { PrivateRoute, SingIn } from './pages/auth'
+import { ListUsersSkeleton } from './pages/admin/ListUsers/ListUsersSkeleton'
+import { NotFoundSkeleton } from './pages/app/NotFoundSkeleton'
+import { PrivateRoute } from './pages/auth'
+import { SinginSkeleton } from './pages/auth/Singin/SinginSkeleton'
+
+// Lazy loading das páginas
+const LogOut = lazy(() => import('@/pages/app/LogOut'))
+const NotFound = lazy(() => import('@/pages/app/404'))
+const ListUsers = lazy(() => import('./pages/admin/ListUsers/ListUsers'))
+const SingIn = lazy(() => import('./pages/auth/Singin/Singin'))
+
+// const ListUsers = lazy(
+// 	() =>
+// 		new Promise((resolve) => {
+// 			setTimeout(() => {
+// 				resolve(import('@/pages/admin/ListUsers/ListUsers'))
+// 			}, 200000)
+// 		}) as Promise<{ default: React.ComponentType<any> }>,
+// )
 
 const Roles = {
 	ADMIN: 'ADMIN',
@@ -32,7 +51,11 @@ export const router = createBrowserRouter([
 						children: [
 							{
 								path: '',
-								element: <ListUsers />,
+								element: (
+									<Suspense fallback={<ListUsersSkeleton />}>
+										<ListUsers />
+									</Suspense>
+								),
 							},
 						],
 					},
@@ -46,20 +69,27 @@ export const router = createBrowserRouter([
 				),
 				path: '',
 			},
-
 			{
 				path: 'auth',
 				element: <AuthLayout />,
 				children: [
 					{
 						path: '',
-						element: <SingIn />,
+						element: (
+							<Suspense fallback={<SinginSkeleton />}>
+								<SingIn />
+							</Suspense>
+						),
 					},
 				],
 			},
 			{
 				path: '*',
-				element: <NotFound />,
+				element: (
+					<Suspense fallback={<NotFoundSkeleton />}>
+						<NotFound />
+					</Suspense>
+				),
 			},
 		],
 	},

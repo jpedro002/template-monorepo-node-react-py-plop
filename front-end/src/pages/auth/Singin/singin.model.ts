@@ -9,7 +9,7 @@ import { singinSchemaType } from './singin.types'
 export const useSingin = () => {
 	const [passwordVisibility, setPasswordVisibility] = useState(false)
 
-	const { login, refreshSession } = useAuth()
+	const { login } = useAuth()
 
 	const handleChangePasswordVisibility = () => {
 		setPasswordVisibility((prev) => !prev)
@@ -25,12 +25,10 @@ export const useSingin = () => {
 
 	const onSubmit = async (data: singinSchemaType) => {
 		try {
-			await login({
+			login({
 				email: data.email.trim().toLocaleLowerCase(),
 				password: data.password,
 			})
-
-			refreshSession()
 
 			toast.success('Bem-vindo(a)')
 		} catch (_error) {

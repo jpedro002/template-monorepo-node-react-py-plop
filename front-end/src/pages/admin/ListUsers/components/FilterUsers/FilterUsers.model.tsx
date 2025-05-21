@@ -10,6 +10,11 @@ export const useFilterUsers = () => {
 	const customerName = searchParams.get('customerName')
 	const status = searchParams.get('status')
 
+	const filters = {
+		customerName: customerName || '',
+		status: status === 'all' ? undefined : status || '',
+	}
+
 	const { register, handleSubmit, control, reset } =
 		useForm<IFilterUsersSchema>({
 			resolver: zodResolver(filterUsersSchema),
@@ -57,5 +62,6 @@ export const useFilterUsers = () => {
 		control,
 		handleFilter,
 		handleClearFilters,
+		filters,
 	}
 }

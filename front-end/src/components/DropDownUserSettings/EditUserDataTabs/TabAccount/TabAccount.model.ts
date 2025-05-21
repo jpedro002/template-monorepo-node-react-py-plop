@@ -1,9 +1,8 @@
-import { useAppSelector } from '@/store'
-import { updateEmailAndName } from '@/store/slices/authSlice'
+import { useAuth } from '@/hooks/useAuth/useAuth'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { isAxiosError } from 'axios'
 import { useForm } from 'react-hook-form'
-import { useDispatch } from 'react-redux'
 import { toast } from 'sonner'
 import { EmailAndNameSchema } from './TabAccount.schema'
 import { IEmailAndNameSchema, IuseTabAccountProps } from './TabAccount.type'
@@ -12,8 +11,8 @@ export const useTabAccount = ({
 	handleCloseModal,
 	usersService,
 }: IuseTabAccountProps) => {
-	const userData = useAppSelector((state) => state.auth.session)
-	const dispatch = useDispatch()
+	const { session, refreshSession } = useAuth()
+	const queryClient = useQueryClient()
 
 	const {
 		register,
@@ -22,23 +21,54 @@ export const useTabAccount = ({
 	} = useForm<IEmailAndNameSchema>({
 		resolver: zodResolver(EmailAndNameSchema),
 		defaultValues: {
-			name: userData?.name || '',
-			email: userData?.email || '',
+			name: session?.name || '',
+			email: session?.email || '',
 		},
 	})
 
-	const onSubmit = async (data: IEmailAndNameSchema) => {
-		try {
-			await usersService.selfUpdateEmailAndName(data)
-			dispatch(updateEmailAndName(data))
-			toast.success('Conta atualizada com sucesso')
-			handleCloseModal()
-		} catch (error) {
+	const { mutate: updateUserData, isPending } = useMutation({
+		mutationFn: (data: IEmailAndNameSchema) =>
+			usersService.selfUpdateEmailAndName(data),
+
+		onMutate: async (newData) => {
+			await queryClient.cancelQueries({ queryKey: ['session'] })
+
+			const previousSession = queryClient.getQueryData(['session'])
+
+			queryClient.setQueryData(['session'], (old: any) => ({
+				...old,
+				name: newData.name,
+				email: newData.email,
+			}))
+
+			return { previousSession }
+		},
+
+		onError: (error, _variables, context) => {
+			if (context?.previousSession) {
+				queryClient.setQueryData(['session'], context.previousSession)
+			}
+
 			console.error(error)
 			if (isAxiosError(error)) {
 				toast.error(error.response?.data.message || 'Erro ao atualizar conta')
+			} else {
+				toast.error('Ocorreu um erro ao atualizar sua conta')
 			}
-		}
+		},
+
+		onSettled: () => {
+			refreshSession()
+		},
+
+		onSuccess: () => {
+			toast.success('Conta atualizada com sucesso')
+			handleCloseModal()
+		},
+	})
+
+	const onSubmit = (data: IEmailAndNameSchema) => {
+		updateUserData(data)
 	}
 
 	return {
@@ -46,5 +76,6 @@ export const useTabAccount = ({
 		handleSubmit,
 		errors,
 		onSubmit,
+		isSubmitting: isPending,
 	}
 }

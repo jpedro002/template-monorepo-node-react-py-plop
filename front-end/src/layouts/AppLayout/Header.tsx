@@ -1,9 +1,10 @@
 import { DropDownUserSettings } from '@/components/DropDownUserSettings/DropDownUserSettings'
-import { useAppSelector } from '@/store'
+import { titleAtom } from '@/store/atoms/titleAtom'
+import { useAtom } from 'jotai'
 import { SheetApp } from './SheetApp'
 
 export function Header() {
-	const titleHeader = useAppSelector((state) => state.appHeaderTitleSlice.title)
+	const [titleHeader] = useAtom(titleAtom)
 
 	return (
 		<header className="bg-white shadow-md sticky top-0 z-10">

@@ -1,49 +1,34 @@
 import { useAppTitle } from '@/hooks/useAppTitle'
-import { useAppSelector } from '@/store'
-import { setLoadingState, startUsers } from '@/store/slices/appUsersSlice'
+import { usersKeys } from '@/services/appUsers/queryKeys'
+import { useQuery } from '@tanstack/react-query'
 import { isAxiosError } from 'axios'
 import { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
-import { useSearchParams } from 'react-router-dom'
 import { toast } from 'sonner'
 import { IUseListUsers } from './ListUsers.types'
+import { useFilterUsers } from './components/FilterUsers/FilterUsers.model'
 
 export const useListUsers = ({ usersService }: IUseListUsers) => {
-	const [searchParams, _] = useSearchParams()
-
-	const status = searchParams.get('status')
-	const customerName = searchParams.get('customerName')
-
 	useAppTitle({ title: 'Usuários' })
+	const { filters } = useFilterUsers()
 
-	const appUsers = useAppSelector((state) => state.appUsers.users)
-	const loading = useAppSelector((state) => state.appUsers.isLoading)
-	const dispatch = useDispatch()
+	const {
+		data: appUsers = [],
+		isLoading: loading,
+		error,
+	} = useQuery({
+		queryKey: usersKeys.users.list(filters),
+		queryFn: () => usersService.list(filters),
+		staleTime: 1000 * 60 * 5, // 5 minutes
+		retry: 1,
+	})
 
 	useEffect(() => {
-		const fetchUsers = async () => {
-			dispatch(setLoadingState(true))
-			try {
-				const users = await usersService.list({
-					customerName: customerName || '',
-					status: status === 'all' ? undefined : status || '',
-				})
-
-				dispatch(startUsers(users))
-			} catch (error) {
-				console.error('Erro ao obter os usuários:', error)
-				if (isAxiosError(error)) {
-					toast.error(
-						error.response?.data.message || 'Erro ao obter os usuários',
-					)
-				}
-			} finally {
-				dispatch(setLoadingState(false))
-			}
+		if (isAxiosError(error)) {
+			console.error('Erro ao obter os usuários:', error)
+			toast.error(error.response?.data.message || 'Erro ao obter os usuários')
 		}
+	}, [])
 
-		fetchUsers()
-	}, [customerName, status])
 	return {
 		appUsers,
 		loading,

@@ -1,11 +1,11 @@
-import { setAppTitle } from '@/store/slices/appHeaderTitleSlice'
+import { titleAtom } from '@/store/atoms/titleAtom'
+import { useAtom } from 'jotai'
 import { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
 
 export const useAppTitle = ({ title }: { title: string }) => {
-	const dispatch = useDispatch()
+	const [_, setAppTitle] = useAtom(titleAtom)
 
 	useEffect(() => {
-		dispatch(setAppTitle({ title }))
-	}, [dispatch, title])
+		setAppTitle(title)
+	}, [title])
 }

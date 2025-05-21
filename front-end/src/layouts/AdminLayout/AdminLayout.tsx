@@ -6,10 +6,11 @@ import { SheetAppMobile } from '@/layouts/AdminLayout/SheetAppMobile'
 
 import { DropDownUserSettings } from '@/components/DropDownUserSettings/DropDownUserSettings'
 import { cn } from '@/lib/utils'
-import { useAppSelector } from '@/store'
+import { titleAtom } from '@/store/atoms/titleAtom'
+import { useAtom } from 'jotai'
 
 export function AdminLayout() {
-	const titleHeader = useAppSelector((state) => state.appHeaderTitleSlice.title)
+	const [titleHeader] = useAtom(titleAtom)
 
 	return (
 		<div

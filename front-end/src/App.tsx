@@ -8,7 +8,6 @@ import { Toaster } from 'sonner'
 
 import { queryClient } from './lib/reactQuery'
 import { router } from './router'
-import { ReduxProvider } from './store/ReduxProvider'
 
 const persister = createSyncStoragePersister({
 	storage: window.localStorage,
@@ -24,13 +23,11 @@ persistQueryClient({
 export const App = () => {
 	return (
 		<QueryClientProvider client={queryClient}>
-			<ReduxProvider>
-				<HelmetProvider>
-					<Helmet titleTemplate="%s | title title" />
-					<RouterProvider router={router} />
-					<Toaster richColors />
-				</HelmetProvider>
-			</ReduxProvider>
+			<HelmetProvider>
+				<Helmet titleTemplate="%s | title title" />
+				<RouterProvider router={router} />
+				<Toaster richColors />
+			</HelmetProvider>
 			<ReactQueryDevtools initialIsOpen={false} />
 		</QueryClientProvider>
 	)

@@ -1,13 +1,13 @@
+import { usersKeys } from '@/services/appUsers/queryKeys'
 import { ROLES_ARRAY } from '@/services/session/types'
-import { useAppSelector } from '@/store'
-import { updateUser } from '@/store/slices/appUsersSlice'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { isAxiosError } from 'axios'
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { useDispatch } from 'react-redux'
 import { toast } from 'sonner'
 import { updateUserSchema } from '../CreateAccountModal/CreateAccountModal.schema'
+import { useFilterUsers } from '../FilterUsers/FilterUsers.model'
 import {
 	IUpdateUserSchema,
 	IUseUpdateAccountModal,
@@ -19,12 +19,8 @@ export const useUpdateAccountModal = ({
 	userID,
 }: IUseUpdateAccountModal) => {
 	const [isOpen, setIsOpen] = useState(false)
-
-	const loading = useAppSelector((state) => state.appUsers.isLoading)
-
-	const dispatch = useDispatch()
-
-	const ROLES = ROLES_ARRAY
+	const queryClient = useQueryClient()
+	const { filters } = useFilterUsers()
 
 	const {
 		register,
@@ -36,53 +32,61 @@ export const useUpdateAccountModal = ({
 		defaultValues,
 	})
 
-	const onSubmit = async (data: IUpdateUserSchema) => {
-		try {
-			const response = await usersService.update(userID, data)
+	const updateUserMutation = useMutation({
+		mutationFn: (data: IUpdateUserSchema) => {
+			return usersService.update(userID, data)
+		},
+		onSuccess: () => {
+			queryClient.invalidateQueries({
+				queryKey: usersKeys.users.list(filters),
+			})
 
-			dispatch(
-				updateUser({
-					id: userID,
-					email: response.email,
-					name: response.name,
-					role: response.role,
-				}),
-			)
 			toast.success('Usuário atualizado com sucesso')
 			setIsOpen(false)
-		} catch (error) {
+		},
+		onError: (error) => {
 			console.error(error)
 			if (isAxiosError(error) && error.response) {
 				toast.error(error.response.data.message || 'Erro ao atualizar usuário')
 			}
-		}
-	}
+		},
+	})
 
-	const onResetPassword = async () => {
-		try {
-			await usersService.resetPassword(userID)
-
+	const resetPasswordMutation = useMutation({
+		mutationFn: () => {
+			return usersService.resetPassword(userID)
+		},
+		onSuccess: () => {
 			toast.success('Senha resetada com sucesso')
 			setIsOpen(false)
-		} catch (error) {
+		},
+		onError: (error) => {
 			console.error(error)
 			if (isAxiosError(error) && error.response) {
 				toast.error(error.response.data.message || 'Erro ao resetar senha')
 			}
-		}
+		},
+	})
+
+	const onSubmit = (data: IUpdateUserSchema) => {
+		updateUserMutation.mutate(data)
+	}
+
+	const onResetPassword = () => {
+		resetPasswordMutation.mutate()
 	}
 
 	return {
 		isOpen,
 		setIsOpen,
-		loading,
+		loading: updateUserMutation.isPending || resetPasswordMutation.isPending,
 		register,
 		control,
 		handleSubmit,
 		errors,
 		isSubmitting,
 		onSubmit,
-		ROLES,
+		ROLES: ROLES_ARRAY,
 		onResetPassword,
 	}
 }

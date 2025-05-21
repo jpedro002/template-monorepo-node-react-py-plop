@@ -6,7 +6,7 @@ export const AppLayout = () => {
 	return (
 		<div
 			className="grid h-full min-h-screen grid-rows-[min-content_1fr]
-		 items-start  "
+		 items-start antialiased "
 		>
 			<Header />
 			<Outlet />

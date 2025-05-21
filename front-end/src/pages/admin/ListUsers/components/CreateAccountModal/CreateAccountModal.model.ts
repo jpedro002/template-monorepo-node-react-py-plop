@@ -1,12 +1,12 @@
+import { usersKeys } from '@/services/appUsers/queryKeys'
 import { ROLES_ARRAY } from '@/services/session/types'
-import { useAppSelector } from '@/store'
-import { addUser } from '@/store/slices/appUsersSlice'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { isAxiosError } from 'axios'
 import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { useDispatch } from 'react-redux'
 import { toast } from 'sonner'
+import { useFilterUsers } from '../FilterUsers/FilterUsers.model'
 import { createUserSchema } from './CreateAccountModal.schema'
 import {
 	ICreateUserSchema,
@@ -22,9 +22,9 @@ export const useCreateAccountModal = ({
 		retypePassword: false,
 	})
 
-	const loading = useAppSelector((state) => state.appUsers.isLoading)
+	const { filters } = useFilterUsers()
 
-	const dispatch = useDispatch()
+	const queryClient = useQueryClient()
 
 	const methods = useForm<ICreateUserSchema>({
 		resolver: zodResolver(createUserSchema),
@@ -45,6 +45,32 @@ export const useCreateAccountModal = ({
 		formState: { errors, isSubmitting },
 	} = methods
 
+	const createUserMutation = useMutation({
+		mutationFn: (data: Omit<ICreateUserSchema, 'retypePassword'>) => {
+			return usersService.create({
+				...data,
+				email: data.email.trim().toLowerCase(),
+				name: data.name.trim().toLowerCase(),
+			})
+		},
+		onSuccess: (newUser) => {
+			queryClient.setQueryData(
+				usersKeys.users.list(filters),
+				(oldData: any) => {
+					return oldData ? [...oldData, newUser] : [newUser]
+				},
+			)
+			resetForm()
+			toast.success('Usuário criado com sucesso')
+		},
+		onError: (error) => {
+			console.error(error)
+			if (isAxiosError(error)) {
+				toast.error(error.response?.data.message || 'Erro ao criar o usuário')
+			}
+		},
+	})
+
 	const togglePasswordVisibility = (
 		passwordField: 'password' | 'retypePassword',
 	) => {
@@ -63,26 +89,8 @@ export const useCreateAccountModal = ({
 	}
 
 	const onSubmit = async (data: ICreateUserSchema) => {
-		try {
-			const { role, name, ...rest } = data
-
-			const response = await usersService.create({
-				...rest,
-				email: data.email.trim().toLocaleLowerCase(),
-				name: data.name.trim().toLowerCase(),
-				role,
-			})
-
-			dispatch(addUser(response))
-			resetForm()
-			toast.success('Usuário criado com sucesso')
-		} catch (error) {
-			console.error(error)
-
-			if (isAxiosError(error)) {
-				toast.error(error.response?.data.message || 'Erro ao criar o usuário')
-			}
-		}
+		const { role, name, retypePassword, ...rest } = data
+		createUserMutation.mutate({ ...rest, name, role })
 	}
 
 	useEffect(() => {
@@ -94,7 +102,7 @@ export const useCreateAccountModal = ({
 	return {
 		isOpen,
 		setIsOpen,
-		loading,
+		loading: createUserMutation.isPending,
 		passwordVisibility,
 		togglePasswordVisibility,
 		register,

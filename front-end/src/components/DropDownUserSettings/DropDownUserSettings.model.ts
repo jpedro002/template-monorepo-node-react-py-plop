@@ -1,13 +1,10 @@
 import { useAuth } from '@/hooks/useAuth/useAuth'
-import { useAppSelector } from '@/store'
 
 export const useDropDownUserSettings = () => {
-	const user = useAppSelector((state) => state.auth.session)
-
-	const { singout } = useAuth()
+	const { singout, session } = useAuth()
 
 	return {
-		user,
+		user: session,
 		onLogout: singout,
 	}
 }
