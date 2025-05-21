@@ -1,7 +1,7 @@
-import { useTableModel } from './Table.model'
+// import { useTableModel } from './Table.model'
 
-export interface UseTableModelProps {
-  : 
-}
+// export interface UseTableModelProps {
+//   :
+// }
 
-export type TableViewProps = ReturnType<typeof useTableModel>
+// export type TableViewProps = ReturnType<typeof useTableModel>

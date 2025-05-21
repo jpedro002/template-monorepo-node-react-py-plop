@@ -1,8 +1,6 @@
-import React, { Suspense, lazy } from 'react'
+import { Suspense, lazy } from 'react'
 import { Outlet, createBrowserRouter } from 'react-router-dom'
 
-import { SpinnerLoading } from './components/SpinnerLoading'
-// Layouts e Providers (podem ser mantidos como importação direta se usados em todas as rotas)
 import { AdminLayout, AuthLayout, SessionProvider } from './layouts'
 import { ListUsersSkeleton } from './pages/admin/ListUsers/ListUsersSkeleton'
 import { NotFoundSkeleton } from './pages/app/NotFoundSkeleton'
