@@ -33,10 +33,10 @@ export function PatientView(props: PatientViewProps) {
 			<div className="container mx-auto p-4 sm:p-6 md:p-8">
 				<UpdatePatientDialog />
 				<Pagination
-				page={data.pagination.page}
-				rowCount={data.pagination.rowCount}
-				pageCount={data.pagination.pageCount}
-				pageSize={data.pagination.pageSize}
+					page={data.pagination.page}
+					rowCount={data.pagination.rowCount}
+					pageCount={data.pagination.pageCount}
+					pageSize={data.pagination.pageSize}
 				/>
 			</div>
 		</main>

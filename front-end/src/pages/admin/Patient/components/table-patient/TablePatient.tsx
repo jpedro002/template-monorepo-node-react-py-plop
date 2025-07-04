@@ -1,11 +1,4 @@
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from '@/components/ui/table'
+import { DeleteConfirmationDialog } from '@/components/DeleteConfirmationDialog'
 import { Button } from '@/components/ui/button/button'
 import {
 	DropdownMenu,
@@ -13,7 +6,14 @@ import {
 	DropdownMenuItem,
 	DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
-import { DeleteConfirmationDialog } from '@/components/DeleteConfirmationDialog'
+import {
+	Table,
+	TableBody,
+	TableCell,
+	TableHead,
+	TableHeader,
+	TableRow,
+} from '@/components/ui/table'
 import { formateBirthDate } from '@/lib/ultil/format-date'
 import { usePatientDelete } from '@/services/patient/usePatient'
 import { Edit, MoreVertical, Trash2 } from 'lucide-react'
@@ -38,7 +38,7 @@ export function TablePatient({ patients, onEdit }: TablePatientProps) {
 						</TableRow>
 					</TableHeader>
 					<TableBody>
-						{ patients.length === 0 ? (
+						{patients.length === 0 ? (
 							<TableRow>
 								<TableCell colSpan={4} className="h-24 text-center">
 									Nenhum paciente encontrado.
@@ -46,9 +46,9 @@ export function TablePatient({ patients, onEdit }: TablePatientProps) {
 							</TableRow>
 						) : (
 							patients.map((patient) => (
-								<TableRow key={ patient.id}>
-									<TableCell className="font-medium">{ patient.id}</TableCell>
-									<TableCell>{ patient.name}</TableCell>
+								<TableRow key={patient.id}>
+									<TableCell className="font-medium">{patient.id}</TableCell>
+									<TableCell>{patient.name}</TableCell>
 									<TableCell>
 										{formateBirthDate(new Date(patient.createdAt))}
 									</TableCell>

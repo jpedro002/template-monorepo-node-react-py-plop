@@ -28,7 +28,7 @@ export function usePaginationModel({ page, rowCount, pageCount, pageSize }: UseP
 		} else if (pageCount > 0 && currentPage > pageCount) {
 			goToPage(pageCount)
 		}
-	}, [page, pageCount, searchParams])
+	}, [pageCount, searchParams.toString()]) // Removido page e convertido searchParams para string
 
 	const startItem = rowCount === 0 ? 0 : (page - 1) * pageSize + 1
 	const endItem = Math.min(page * pageSize, rowCount)

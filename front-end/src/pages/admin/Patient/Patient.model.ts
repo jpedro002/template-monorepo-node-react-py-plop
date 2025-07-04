@@ -35,6 +35,7 @@ export function usePatientModel() {
         term: filters.searchTerm,
         page: filters.page,
         fields: ['name'],
+        pageSize: 2
     })
 
     const onEdit = (b: boolean, id: number) => {

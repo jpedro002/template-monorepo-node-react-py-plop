@@ -11,25 +11,26 @@ export function useFilterModel() {
     const [inputValue, setInputValue] = useState(searchTerm)
     const [page, setPage] = useAtom(pageAtom)
     const [searchParams, setSearchParams] = useSearchParams()
-    
+
     // Debounce do valor de input para evitar muitas requisições
     const [debouncedSearchTerm] = useDebounce(inputValue, 500)
 
-    // Sincronizar com query params na inicialização
+    // Sincronizar com query params na inicialização e mudanças
     useEffect(() => {
         const urlSearchTerm = searchParams.get('searchTerm') || ''
         const urlPage = Number(searchParams.get('page')) || 1
-        
-        if (urlSearchTerm !== inputValue) {
-            setInputValue(urlSearchTerm)
-        }
+
+        // Só atualiza se realmente houver diferença
         if (urlSearchTerm !== searchTerm) {
             setSearchTerm(urlSearchTerm)
+        }
+        if (urlSearchTerm !== inputValue) {
+            setInputValue(urlSearchTerm)
         }
         if (urlPage !== page) {
             setPage(urlPage)
         }
-    }, []) // Só executa uma vez na inicialização
+    }, [searchParams.toString()]) // Converte para string para evitar referência
 
     // Atualizar searchTerm e URL quando o debounced value mudar
     useEffect(() => {
@@ -37,7 +38,7 @@ export function useFilterModel() {
         if (debouncedSearchTerm !== searchTerm) {
             setSearchTerm(debouncedSearchTerm)
             setPage(1) // Reset página para 1 ao pesquisar
-            
+
             setSearchParams((params) => {
                 if (debouncedSearchTerm.trim()) {
                     params.set('searchTerm', debouncedSearchTerm)
@@ -58,7 +59,7 @@ export function useFilterModel() {
         setInputValue('')
         setSearchTerm('')
         setPage(1)
-        
+
         setSearchParams((params) => {
             params.delete('searchTerm')
             params.set('page', '1')
