@@ -1,11 +1,24 @@
 types {
-    text/html                  html htm shtml;
-    text/css                   css;
-    application/javascript     js;
-    application/json           json;
-    image/gif                  gif;
-    image/jpeg                 jpeg jpg;
-    application/xml            xml;
-    text/xml                   xml;
-    image/png                  png;
+    text/html                             html htm shtml;
+    text/css                              css;
+    text/xml                              xml;
+    image/gif                             gif;
+    image/jpeg                            jpeg jpg;
+    image/png                             png;
+    image/svg+xml                         svg svgz;
+    image/tiff                            tif tiff;
+    image/webp                            webp;
+    image/x-icon                          ico;
+    application/javascript                js;
+    application/json                      json;
+    application/xml                       xml;
+    application/atom+xml                  atom;
+    application/rss+xml                   rss;
+    font/ttf                              ttf;
+    font/woff                             woff;
+    font/woff2                            woff2;
+    application/vnd.ms-fontobject         eot;
+    application/pdf                       pdf;
+    application/zip                       zip;
+    text/plain                            txt;
 }
