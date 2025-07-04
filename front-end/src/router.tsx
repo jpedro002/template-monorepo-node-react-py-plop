@@ -1,6 +1,7 @@
 import { Suspense, lazy } from 'react'
 import { Outlet, createBrowserRouter } from 'react-router-dom'
 
+import { SpinnerLoading } from './components/SpinnerLoading'
 import { AdminLayout, AuthLayout, SessionProvider } from './layouts'
 import { ListUsersSkeleton } from './pages/admin/ListUsers/ListUsersSkeleton'
 import { NotFoundSkeleton } from './pages/app/NotFoundSkeleton'
@@ -11,6 +12,7 @@ import { SinginSkeleton } from './pages/auth/Singin/SinginSkeleton'
 const LogOut = lazy(() => import('@/pages/app/LogOut'))
 const NotFound = lazy(() => import('@/pages/app/404'))
 const ListUsers = lazy(() => import('./pages/admin/ListUsers/ListUsers'))
+const Patients = lazy(() => import('./pages/admin/Patient/Patient'))
 const SingIn = lazy(() => import('./pages/auth/Singin/Singin'))
 
 // const ListUsers = lazy(
@@ -52,6 +54,14 @@ export const router = createBrowserRouter([
 								element: (
 									<Suspense fallback={<ListUsersSkeleton />}>
 										<ListUsers />
+									</Suspense>
+								),
+							},
+							{
+								path: 'patients',
+								element: (
+									<Suspense fallback={<SpinnerLoading />}>
+										<Patients />
 									</Suspense>
 								),
 							},

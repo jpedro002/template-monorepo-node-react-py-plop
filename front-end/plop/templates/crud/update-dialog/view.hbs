@@ -1,0 +1,84 @@
+import { SpinnerLoading } from '@/components/SpinnerLoading'
+import { Button } from '@/components/ui/button/button'
+import {
+	Dialog,
+	DialogContent,
+	DialogFooter,
+	DialogHeader,
+	DialogTitle,
+} from '@/components/ui/dialog'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { Update{{pascalCase entityName}}DialogViewProps } from './types'
+
+export function Update{{pascalCase entityName}}DialogView({
+	isOpen,
+	setIsOpen,
+	form,
+	onSubmit,
+	isLoading,
+	isLoading{{pascalCase entityName}},
+	error,
+}: Update{{pascalCase entityName}}DialogViewProps) {
+	const {
+		register,
+		handleSubmit,
+		formState: { errors },
+	} = form
+
+	return (
+		<Dialog open={isOpen} onOpenChange={setIsOpen}>
+			<DialogContent className="sm:max-w-[425px]">
+				<DialogHeader>
+					<DialogTitle>Editar {{pascalCase entityName}}</DialogTitle>
+				</DialogHeader>
+				{isLoading{{pascalCase entityName}} ? (
+					<div className="flex justify-center p-4">
+						<SpinnerLoading />
+					</div>
+				) : (
+					<form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+						<div className="space-y-2">
+							<Label htmlFor="name">Nome</Label>
+							<Input
+								id="name"
+								placeholder="Digite o nome do {{lowerCase entityName}}"
+								{...register('name', {
+									required: 'Nome é obrigatório',
+									minLength: {
+										value: 3,
+										message: 'Nome deve ter pelo menos 3 caracteres',
+									},
+								})}
+							/>
+							{errors.name && (
+								<p className="text-sm text-destructive">
+									{errors.name.message}
+								</p>
+							)}
+						</div>
+
+						{error && (
+							<div className="text-sm text-destructive">
+								Erro ao atualizar {{lowerCase entityName}}: {error.message}
+							</div>
+						)}
+
+						<DialogFooter>
+							<Button
+								type="button"
+								variant="outline"
+								onClick={() => setIsOpen(false)}
+							>
+								Cancelar
+							</Button>
+							<Button type="submit" disabled={isLoading}>
+								{isLoading ? 'Atualizando...' : 'Atualizar {{pascalCase entityName}}'}
+							</Button>
+						</DialogFooter>
+					</form>
+				)}
+			</DialogContent>
+		</Dialog>
+	)
+}

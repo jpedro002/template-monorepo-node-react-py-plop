@@ -1,0 +1,17 @@
+import {
+    {{pascalCase entityName}},
+} from '@/services/{{kebabCase entityName}}'
+import { use{{pascalCase entityName}}Model } from './{{pascalCase entityName}}.model'
+
+export interface Use{{pascalCase entityName}}ModelProps {
+    // Props interface pode ser removida ou deixada vazia se não precisar de props
+}
+
+export type {{pascalCase entityName}}ViewProps = ReturnType<
+    typeof use{{pascalCase entityName}}Model
+>
+
+export interface {{pascalCase entityName}}SharedProps {
+    {{camelCase entityName}}s: {{pascalCase entityName}}[]
+    onEdit: (b: boolean, id: number) => void
+}

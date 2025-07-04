@@ -1,0 +1,75 @@
+// src/services/{{kebabCase name}}/use{{pascalCase name}}.ts
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import { {{camelCase name}}Service } from './{{camelCase name}}.service'
+import { {{camelCase name}}Keys } from './{{camelCase name}}.query-keys'
+import type {
+  {{pascalCase name}},
+  Create{{pascalCase name}}Dto,
+  Update{{pascalCase name}}Dto,
+  {{pascalCase name}}Filters,
+  Paginated{{pascalCase name}}Response
+} from './types'
+
+export function use{{pascalCase name}}List(filters?: {{pascalCase name}}Filters) {
+  return useQuery<{{pascalCase name}}[]>({
+    queryKey: {{camelCase name}}Keys.list(filters),
+    queryFn: () => {{camelCase name}}Service.list(filters),
+  })
+}
+
+export function use{{pascalCase name}}Get(id: string) {
+  return useQuery<{{pascalCase name}}>({
+    queryKey: {{camelCase name}}Keys.get(id),
+    queryFn: () => {{camelCase name}}Service.get(id),
+    enabled: !!id,
+  })
+}
+
+export function use{{pascalCase name}}Create() {
+  const queryClient = useQueryClient()
+  return useMutation<
+    {{pascalCase name}},
+    unknown,
+    Create{{pascalCase name}}Dto
+  >({
+    mutationFn: {{camelCase name}}Service.create,
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: {{camelCase name}}Keys.all })
+    },
+  })
+}
+
+export function use{{pascalCase name}}Update() {
+  const queryClient = useQueryClient()
+  return useMutation<
+    {{pascalCase name}},
+    unknown,
+    { id: string; data: Update{{pascalCase name}}Dto }
+  >({
+    mutationFn: ({ id, data }) => {{camelCase name}}Service.update(id, data),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: {{camelCase name}}Keys.all })
+    },
+  })
+}
+
+export function use{{pascalCase name}}Delete() {
+  const queryClient = useQueryClient()
+  return useMutation<
+    void,
+    unknown,
+    string
+  >({
+    mutationFn: (id) => {{camelCase name}}Service.delete(id),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: {{camelCase name}}Keys.all })
+    },
+  })
+}
+
+export function use{{pascalCase name}}Fetch(params?: {{pascalCase name}}Filters) {
+  return useQuery<Paginated{{pascalCase name}}Response>({
+    queryKey: {{camelCase name}}Keys.fetch(params),
+    queryFn: () => {{camelCase name}}Service.fetch(params),
+  })
+}

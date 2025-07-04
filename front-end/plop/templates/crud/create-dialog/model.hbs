@@ -1,0 +1,34 @@
+import { Create{{pascalCase entityName}}Dto } from '@/services/{{kebabCase entityName}}'
+import { use{{pascalCase entityName}}Create } from '@/services/{{kebabCase entityName}}/use{{pascalCase entityName}}'
+import { useState } from 'react'
+import { useForm } from 'react-hook-form'
+
+export function useCreate{{pascalCase entityName}}DialogModel() {
+    const [isOpen, setIsOpen] = useState(false)
+
+    const form = useForm<Create{{pascalCase entityName}}Dto>({
+        defaultValues: {
+            name: '',
+        },
+    })
+
+    const createMutation = use{{pascalCase entityName}}Create()
+
+    const onSubmit = (data: Create{{pascalCase entityName}}Dto) => {
+        createMutation.mutate(data, {
+            onSuccess: () => {
+                setIsOpen(false)
+                form.reset()
+            }
+        })
+    }
+
+    return {
+        isOpen,
+        setIsOpen,
+        form,
+        onSubmit,
+        isLoading: createMutation.isPending,
+        error: createMutation.error,
+    }
+}

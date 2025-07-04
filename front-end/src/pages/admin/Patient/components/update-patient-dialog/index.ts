@@ -1,0 +1,1 @@
+export { UpdatePatientDialog } from './UpdatePatientDialog'

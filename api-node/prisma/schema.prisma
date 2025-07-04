@@ -56,3 +56,11 @@ model Card {
 
   @@map("cards")
 }
+
+model Patient {
+  id        Int      @id @default(autoincrement())
+  name      String   @db.VarChar(90)
+  createdAt DateTime @default(now())
+
+  @@map("patients")
+}

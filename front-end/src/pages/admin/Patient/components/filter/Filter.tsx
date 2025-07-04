@@ -1,0 +1,10 @@
+import { useFilterModel } from './Filter.model'
+import { FilterView } from './Filter.view'
+
+export function Filter() {
+	const model = useFilterModel()
+
+	return <FilterView {...model} />
+}
+
+export default Filter

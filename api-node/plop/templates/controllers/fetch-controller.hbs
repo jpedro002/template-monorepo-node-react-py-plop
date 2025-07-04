@@ -6,7 +6,7 @@ export async function Fetch{{pascalCase model}}sController(
   request: FastifyRequest<{
     Querystring: {
       term?: string
-      fields?: string
+      fields?: string[]
       order?: string
       page?: number
       pageSize?: number
@@ -23,7 +23,7 @@ export async function Fetch{{pascalCase model}}sController(
   const result = await fetch{{pascalCase model}}UseCase.execute({
     query: {
       term,
-      fields: fields ? fields.split(',') : undefined,
+      fields,
       order,
       page: Number(page),
       pageSize: Number(pageSize),

@@ -1,0 +1,87 @@
+import { Button } from '@/components/ui/button/button'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import {
+	DropdownMenu,
+	DropdownMenuContent,
+	DropdownMenuItem,
+	DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu'
+import { DeleteConfirmationDialog } from '@/components/DeleteConfirmationDialog'
+import { formatDateBR } from '@/lib/ultil/format-date'
+import { use{{pascalCase entityName}}Delete } from '@/services/{{kebabCase entityName}}/use{{pascalCase entityName}}'
+import { Edit, MoreVertical, Trash2 } from 'lucide-react'
+import { Card{{pascalCase entityName}}Props } from './types'
+
+export function Card{{pascalCase entityName}}({ {{camelCase entityName}}s, onEdit }: Card{{pascalCase entityName}}Props) {
+	const deleteMutation = use{{pascalCase entityName}}Delete()
+
+	const handleDelete = (id: number) => {
+		deleteMutation.mutate(String(id))
+	}
+  
+	if ({{camelCase entityName}}s.length === 0) {
+		return (
+			<div className="text-center py-8">
+				<p className="text-muted-foreground">Nenhum {{lowerCase entityName}} encontrado.</p>
+			</div>
+		)
+	}
+
+	return (
+		<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+			{ {{camelCase entityName}}s.map(({{camelCase entityName}}) => (
+				<Card key={ {{camelCase entityName}}.id} className="hover:shadow-md transition-shadow">
+					<CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+						<CardTitle className="text-lg font-medium">{ {{camelCase entityName}}.name}</CardTitle>
+						<DropdownMenu>
+							<DropdownMenuTrigger asChild>
+								<Button variant="ghost" className="h-8 w-8 p-0">
+									<span className="sr-only">Abrir menu</span>
+									<MoreVertical className="h-4 w-4" />
+								</Button>
+							</DropdownMenuTrigger>
+							<DropdownMenuContent align="end">
+								<DropdownMenuItem
+									onClick={() => onEdit(true, {{camelCase entityName}}.id)}
+									className="cursor-pointer"
+								>
+									<Edit className="mr-2 h-4 w-4" />
+									Editar
+								</DropdownMenuItem>
+								<DeleteConfirmationDialog
+									itemName="{{lowerCase entityName}}"
+									onConfirm={() => handleDelete({{camelCase entityName}}.id)}
+									isLoading={deleteMutation.isPending}
+									trigger={
+										<DropdownMenuItem
+											className="cursor-pointer text-destructive"
+											onSelect={(e) => e.preventDefault()}
+										>
+											<Trash2 className="mr-2 h-4 w-4" />
+											Excluir
+										</DropdownMenuItem>
+									}
+								/>
+							</DropdownMenuContent>
+						</DropdownMenu>
+					</CardHeader>
+					<CardContent>
+						<div className="space-y-2">
+							<div className="text-sm text-muted-foreground">
+								<strong>ID:</strong> { {{camelCase entityName}}.id}
+							</div>
+							<div className="text-sm text-muted-foreground">
+								<strong>Criado em:</strong>{' '}
+								{formatDateBR(new Date({{camelCase entityName}}.createdAt))}
+							</div>
+							<div className="text-sm text-muted-foreground">
+								<strong>Atualizado em:</strong>{' '}
+								{formatDateBR(new Date({{camelCase entityName}}.updatedAt))}
+							</div>
+						</div>
+					</CardContent>
+				</Card>
+			))}
+		</div>
+	)
+}

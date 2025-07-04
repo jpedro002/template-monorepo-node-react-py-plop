@@ -1,0 +1,7 @@
+import { useUpdate{{pascalCase entityName}}DialogModel } from './Update{{pascalCase entityName}}Dialog.model'
+import { Update{{pascalCase entityName}}DialogView } from './Update{{pascalCase entityName}}Dialog.view'
+
+export function Update{{pascalCase entityName}}Dialog() {
+	const props = useUpdate{{pascalCase entityName}}DialogModel()
+	return <Update{{pascalCase entityName}}DialogView {...props} />
+}

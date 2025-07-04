@@ -1,0 +1,33 @@
+import { atom } from 'jotai'
+import { atomWithStorage } from 'jotai/utils'
+
+// Modal states
+export const modal{{pascalCase entityName}}CreateAtom = atom<boolean>(false)
+export const modal{{pascalCase entityName}}UpdateAtom = atom<boolean>(false)
+
+// Current entity ID for operations
+export const current{{pascalCase entityName}}IDAtom = atom<number>(0)
+
+// Selected entities for batch operations
+export const selected{{pascalCase entityName}}sAtom = atom<number[]>([])
+
+// View mode (card or table)
+export const viewMode{{pascalCase entityName}}Atom = atomWithStorage<'card' | 'table'>('viewMode{{pascalCase entityName}}', '{{defaultView}}')
+
+// Filter state
+export const {{camelCase entityName}}FilterAtom = atom({
+  searchTerm: '',
+  {{#each searchFieldsArray}}
+  {{this}}: '',
+  {{/each}}
+  createdAtFrom: null as Date | null,
+  createdAtTo: null as Date | null,
+  page: 1,
+  pageSize: 20
+})
+
+// Loading states
+export const {{camelCase entityName}}LoadingAtom = atom<boolean>(false)
+export const {{camelCase entityName}}CreateLoadingAtom = atom<boolean>(false)
+export const {{camelCase entityName}}UpdateLoadingAtom = atom<boolean>(false)
+export const {{camelCase entityName}}DeleteLoadingAtom = atom<boolean>(false)

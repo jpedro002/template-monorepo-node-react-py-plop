@@ -1,0 +1,53 @@
+import { useAppTitle } from '@/hooks/useAppTitle'
+
+import { use{{pascalCase entityName}}Fetch } from '@/services/{{kebabCase entityName}}/use{{pascalCase entityName}}'
+import {
+    current{{pascalCase entityName}}IDAtom,
+    modalUpdate{{pascalCase entityName}}Atom,
+    viewMode{{pascalCase entityName}}Atom,
+} from '@/store/atoms/{{camelCase entityName}}'
+import { useAtom } from 'jotai'
+import { useFilterModel } from './components/filter/Filter.model'
+
+export function use{{pascalCase entityName}}Model() {
+    const [, setModalUpdate{{pascalCase entityName}}IsOpen] = useAtom(
+        modalUpdate{{pascalCase entityName}}Atom,
+    )
+    const [, setCurrent{{pascalCase entityName}}] = useAtom(current{{pascalCase entityName}}IDAtom)
+
+    const [
+        viewMode, setViewMode
+    ] = useAtom(viewMode{{pascalCase entityName}}Atom)
+
+    useAppTitle({
+        title: '{{titleCase entityName}}s',
+    })
+
+    const { filters } = useFilterModel()
+
+    const {
+        data = { data: [], pagination: { page: 1, rowCount: 0, pageCount: 1, pageSize: 20 } },
+        isLoading,
+        error,
+        refetch,
+        isRefetching,
+    } = use{{pascalCase entityName}}Fetch({
+        term: filters.searchTerm,
+        page: filters.page,
+        fields: ['name'],
+    })
+
+    const onEdit = (b: boolean, id: number) => {
+        setModalUpdate{{pascalCase entityName}}IsOpen(b)
+        setCurrent{{pascalCase entityName}}(id)
+    }
+
+    return {
+        data,
+        isLoading: isLoading || isRefetching,
+        error,
+        refetch,
+        onEdit,
+        viewMode, setViewMode
+    }
+}

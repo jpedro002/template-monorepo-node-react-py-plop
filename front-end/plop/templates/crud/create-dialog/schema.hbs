@@ -1,0 +1,13 @@
+// Schema não utilizado no padrão atual
+// O CreateTesteDialog usa react-hook-form diretamente sem Zod
+// Se precisar de validação com Zod, descomente e ajuste conforme necessário
+
+/*
+import { z } from 'zod'
+
+export const create{{pascalCase entityName}}Schema = z.object({
+  name: z.string().min(1, 'Nome é obrigatório').max(255, 'Nome deve ter no máximo 255 caracteres'),
+})
+
+export type Create{{pascalCase entityName}}FormData = z.infer<typeof create{{pascalCase entityName}}Schema>
+*/

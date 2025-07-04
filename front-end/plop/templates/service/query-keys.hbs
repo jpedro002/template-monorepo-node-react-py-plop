@@ -1,0 +1,10 @@
+// src/services/{{kebabCase name}}/{{kebabCase name}}.query-keys.ts
+export const {{camelCase name}}Keys = {
+  all: ['{{kebabCase name}}'] as const,
+  get: (id: string | number) =>
+    [...{{camelCase name}}Keys.all, 'get', id] as const,
+  list: (filters: Record<string, unknown> = {}) =>
+    [...{{camelCase name}}Keys.all, 'list', filters] as const,
+  fetch: (params: Record<string, unknown> = {}) =>
+    [...{{camelCase name}}Keys.all, 'fetch', params] as const,
+}

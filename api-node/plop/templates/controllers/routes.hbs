@@ -65,7 +65,16 @@ export async function {{camelCase model}}Routes(fastify: FastifyInstance) {
       description: 'List all {{camelCase model}}s',
       querystring: z.object({
         term: z.string().optional(),
-        fields: z.string().optional(),
+        fields: z
+          .union([z.array(z.string()), z.string(), z.undefined()])
+          .optional()
+          .transform((val) => {
+            console.log('val ' + Math.random(), val)
+
+            if (Array.isArray(val)) return val
+            if (typeof val === 'string') return [val]
+            return []
+          }),
         order: z.string().optional(),
       }),
       response: {
@@ -83,10 +92,19 @@ export async function {{camelCase model}}Routes(fastify: FastifyInstance) {
       description: 'Fetch {{camelCase model}}s with pagination',
       querystring: z.object({
         term: z.string().optional(),
-        fields: z.string().optional(),
+        fields: z
+          .union([z.array(z.string()), z.string(), z.undefined()])
+          .optional()
+          .transform((val) => {
+            console.log('val ' + Math.random(), val)
+
+            if (Array.isArray(val)) return val
+            if (typeof val === 'string') return [val]
+            return []
+          }),
         order: z.string().optional(),
-        page: z.number().positive().optional().default(1),
-        pageSize: z.number().positive().optional().default(20),
+        page: z.coerce.number().positive().optional().default(1),
+        pageSize: z.coerce.number().positive().optional().default(20),
         itens: z.string().optional(),
       }),
       response: {
@@ -96,6 +114,7 @@ export async function {{camelCase model}}Routes(fastify: FastifyInstance) {
             page: z.number(),
             rowCount: z.number(),
             pageCount: z.number(),
+            pageSize: z.number(),
           }),
         }),
       },

@@ -1,0 +1,100 @@
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/ui/table'
+import { Button } from '@/components/ui/button/button'
+import {
+	DropdownMenu,
+	DropdownMenuContent,
+	DropdownMenuItem,
+	DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu'
+import { DeleteConfirmationDialog } from '@/components/DeleteConfirmationDialog'
+import { formatDateBR } from '@/lib/ultil/format-date'
+import { use{{pascalCase entityName}}Delete } from '@/services/{{kebabCase entityName}}/use{{pascalCase entityName}}'
+import { Edit, MoreVertical, Trash2 } from 'lucide-react'
+import { Table{{pascalCase entityName}}Props } from './types'
+
+export function Table{{pascalCase entityName}}({ {{camelCase entityName}}s, onEdit }: Table{{pascalCase entityName}}Props) {
+	const deleteMutation = use{{pascalCase entityName}}Delete()
+
+	const handleDelete = (id: number) => {
+		deleteMutation.mutate(String(id))
+	}
+	return (
+		<div className="container mx-auto p-4 sm:p-6 md:p-8">
+			<div className="rounded-lg border bg-card">
+				<Table>
+					<TableHeader>
+						<TableRow>
+							<TableHead className="w-[100px]">ID</TableHead>
+							<TableHead>Nome</TableHead>
+							<TableHead>Criado em</TableHead>
+							<TableHead>Atualizado em</TableHead>
+							<TableHead className="w-[70px]">Ações</TableHead>
+						</TableRow>
+					</TableHeader>
+					<TableBody>
+						{ {{camelCase entityName}}s.length === 0 ? (
+							<TableRow>
+								<TableCell colSpan={5} className="h-24 text-center">
+									Nenhum {{lowerCase entityName}} encontrado.
+								</TableCell>
+							</TableRow>
+						) : (
+							{{camelCase entityName}}s.map(({{camelCase entityName}}) => (
+								<TableRow key={ {{camelCase entityName}}.id}>
+									<TableCell className="font-medium">{ {{camelCase entityName}}.id}</TableCell>
+									<TableCell>{ {{camelCase entityName}}.name}</TableCell>
+									<TableCell>
+										{formatDateBR(new Date({{camelCase entityName}}.createdAt))}
+									</TableCell>
+									<TableCell>
+										{formatDateBR(new Date({{camelCase entityName}}.updatedAt))}
+									</TableCell>
+									<TableCell>
+										<DropdownMenu>
+											<DropdownMenuTrigger asChild>
+												<Button variant="ghost" className="h-8 w-8 p-0">
+													<span className="sr-only">Abrir menu</span>
+													<MoreVertical className="h-4 w-4" />
+												</Button>
+											</DropdownMenuTrigger>
+											<DropdownMenuContent align="end">
+												<DropdownMenuItem
+													onClick={() => onEdit(true, {{camelCase entityName}}.id)}
+													className="cursor-pointer"
+												>
+													<Edit className="mr-2 h-4 w-4" />
+													Editar
+												</DropdownMenuItem>
+												<DeleteConfirmationDialog
+													itemName="{{lowerCase entityName}}"
+													onConfirm={() => handleDelete({{camelCase entityName}}.id)}
+													isLoading={deleteMutation.isPending}
+													trigger={
+														<DropdownMenuItem
+															className="cursor-pointer text-destructive"
+															onSelect={(e) => e.preventDefault()}
+														>
+															<Trash2 className="mr-2 h-4 w-4" />
+															Excluir
+														</DropdownMenuItem>
+													}
+												/>
+											</DropdownMenuContent>
+										</DropdownMenu>
+									</TableCell>
+								</TableRow>
+							))
+						)}
+					</TableBody>
+				</Table>
+			</div>
+		</div>
+	)
+}

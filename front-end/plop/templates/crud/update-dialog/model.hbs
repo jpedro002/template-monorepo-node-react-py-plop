@@ -1,0 +1,51 @@
+import { Update{{pascalCase entityName}}Dto } from '@/services/{{kebabCase entityName}}'
+import { use{{pascalCase entityName}}Get, use{{pascalCase entityName}}Update } from '@/services/{{kebabCase entityName}}/use{{pascalCase entityName}}'
+import { current{{pascalCase entityName}}IDAtom, modalUpdate{{pascalCase entityName}}Atom } from '@/store/atoms/{{camelCase entityName}}'
+import { useAtom } from 'jotai'
+import { useEffect } from 'react'
+import { useForm } from 'react-hook-form'
+
+export function useUpdate{{pascalCase entityName}}DialogModel() {
+    const [isOpen, setIsOpen] = useAtom(modalUpdate{{pascalCase entityName}}Atom)
+    const [current{{pascalCase entityName}}ID] = useAtom(current{{pascalCase entityName}}IDAtom)
+
+    const form = useForm<Update{{pascalCase entityName}}Dto>({
+        defaultValues: {
+            name: '',
+        },
+    })
+
+    const { data: {{camelCase entityName}}, isLoading: isLoading{{pascalCase entityName}} } = use{{pascalCase entityName}}Get(String(current{{pascalCase entityName}}ID || ''))
+
+    const updateMutation = use{{pascalCase entityName}}Update()
+
+    const onSubmit = (data: Update{{pascalCase entityName}}Dto) => {
+        if (current{{pascalCase entityName}}ID) {
+            updateMutation.mutate({ id: String(current{{pascalCase entityName}}ID), data }, {
+                onSuccess: () => {
+                    setIsOpen(false)
+                    form.reset()
+                }
+            })
+        }
+    }
+
+    useEffect(() => {
+        if ({{camelCase entityName}}) {
+            form.reset({
+                name: {{camelCase entityName}}.name,
+            })
+        }
+    }, [{{camelCase entityName}}, form])
+
+    return {
+        isOpen,
+        setIsOpen,
+        form,
+        onSubmit,
+        isLoading: updateMutation.isPending,
+        isLoading{{pascalCase entityName}},
+        error: updateMutation.error,
+        {{camelCase entityName}},
+    }
+}

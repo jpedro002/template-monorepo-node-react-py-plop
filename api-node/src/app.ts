@@ -1,4 +1,5 @@
 import Fastify from 'fastify'
+import fastifyQs from 'fastify-qs'
 import {
 	ZodTypeProvider,
 	serializerCompiler,
@@ -17,6 +18,7 @@ import swagger from './plugins/swagger'
 import { sessionRoutes } from './http/controllers/auth/@routes'
 
 import { cardRoutes } from './http/controllers/cards/@routes'
+import { patientRoutes } from './http/controllers/patients/@routes'
 import { userRoutes } from './http/controllers/users/@routes'
 import { delay } from './ultils/delay'
 
@@ -31,6 +33,8 @@ app.setSerializerCompiler(serializerCompiler)
 
 app.register(swagger)
 
+app.register(fastifyQs)
+
 app.register(corsConfig)
 
 app.register(jwtPlugin)
@@ -44,6 +48,8 @@ app.register(sessionRoutes)
 app.register(userRoutes, { prefix: '/users' })
 
 app.register(cardRoutes, { prefix: '/cards' })
+
+app.register(patientRoutes, { prefix: '/patients' })
 
 app.setErrorHandler((error, _, reply) => {
 	if (error instanceof ZodError) {

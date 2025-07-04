@@ -1,0 +1,7 @@
+import { useCreate{{pascalCase entityName}}DialogModel } from './Create{{pascalCase entityName}}Dialog.model'
+import { Create{{pascalCase entityName}}DialogView } from './Create{{pascalCase entityName}}Dialog.view'
+
+export function Create{{pascalCase entityName}}Dialog() {
+	const props = useCreate{{pascalCase entityName}}DialogModel()
+	return <Create{{pascalCase entityName}}DialogView {...props} />
+}
