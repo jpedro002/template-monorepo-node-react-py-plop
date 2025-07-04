@@ -1,16 +1,28 @@
 import { NodePlopAPI } from 'plop'
 import { validatePrismaModel } from './validatePrismaModel.js'
 
-export const crudGenerator = (plop: NodePlopAPI) => {
-	plop.setGenerator('crud', {
+export const manyToManyGenerator = (plop: NodePlopAPI) => {
+	plop.setGenerator('many-to-many', {
 		description:
-			'Gera um novo arquivo de repositório baseado em um modelo do Prisma',
+			'Gera um CRUD completo para relacionamentos many-to-many baseado em um modelo do Prisma',
 		prompts: [
 			{
 				type: 'input',
 				name: 'model',
-				message: 'Nome do modelo do Prisma (ex: User, Product, etc.):',
+				message: 'Nome do modelo de junção (ex: ExamAnswer, UserRole, etc.):',
 				validate: (inp) => validatePrismaModel(inp),
+			},
+			{
+				type: 'input',
+				name: 'parentModel',
+				message: 'Nome do modelo pai (ex: Patient, User, etc.):',
+				validate: (inp) => inp.length > 0 || 'Nome do modelo pai é obrigatório',
+			},
+			{
+				type: 'input',
+				name: 'relationModel',
+				message: 'Nome do modelo relacionado (ex: Exam, Role, etc.):',
+				validate: (inp) => inp.length > 0 || 'Nome do modelo relacionado é obrigatório',
 			},
 		],
 		actions: [
@@ -19,10 +31,23 @@ export const crudGenerator = (plop: NodePlopAPI) => {
 				path: 'src/repositories/{{kebabCase model}}-repository.ts',
 				templateFile: 'plop/templates/repository/repositoryV2.hbs',
 				data: {
-					isManyToMany: false
+					isManyToMany: true
 				}
 			},
 
+			// Create many use cases
+			{
+				type: 'add',
+				path: 'src/use-cases/{{kebabCase model}}/create-{{kebabCase model}}-many-use-case.ts',
+				templateFile: 'plop/templates/use-cases/create-many-use-case.hbs',
+			},
+			{
+				type: 'add',
+				path: 'src/use-cases/{{kebabCase model}}/delete-{{kebabCase model}}-many-use-case.ts',
+				templateFile: 'plop/templates/use-cases/delete-many-use-case.hbs',
+			},
+
+			// Standard use cases
 			{
 				type: 'add',
 				path: 'src/use-cases/{{kebabCase model}}/create-{{kebabCase model}}-use-case.ts',
@@ -54,6 +79,19 @@ export const crudGenerator = (plop: NodePlopAPI) => {
 				templateFile: 'plop/templates/use-cases/delete-use-case.hbs',
 			},
 
+			// Create many controllers
+			{
+				type: 'add',
+				path: 'src/http/controllers/{{kebabCase model}}s/create-{{kebabCase model}}-many-controller.ts',
+				templateFile: 'plop/templates/controllers/create-many-controller.hbs',
+			},
+			{
+				type: 'add',
+				path: 'src/http/controllers/{{kebabCase model}}s/delete-{{kebabCase model}}-many-controller.ts',
+				templateFile: 'plop/templates/controllers/delete-many-controller.hbs',
+			},
+
+			// Standard controllers
 			{
 				type: 'add',
 				path: 'src/http/controllers/{{kebabCase model}}s/create-{{kebabCase model}}-controller.ts',
@@ -88,7 +126,7 @@ export const crudGenerator = (plop: NodePlopAPI) => {
 			{
 				type: 'add',
 				path: 'src/http/controllers/{{kebabCase model}}s/@routes.ts',
-				templateFile: 'plop/templates/controllers/routes.hbs',
+				templateFile: 'plop/templates/controllers/routes-many-to-many.hbs',
 			},
 		],
 	})

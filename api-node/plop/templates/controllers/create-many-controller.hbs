@@ -1,0 +1,37 @@
+import { FastifyReply, FastifyRequest } from 'fastify'
+import { z } from 'zod'
+import { {{pascalCase model}}Repository } from '@/repositories/{{kebabCase model}}-repository'
+import { Create{{pascalCase model}}ManyUseCase } from '@/use-cases/{{kebabCase model}}/create-{{kebabCase model}}-many-use-case'
+
+export async function create{{pascalCase model}}ManyController(
+  request: FastifyRequest,
+  reply: FastifyReply,
+) {
+  const create{{pascalCase model}}ManyBodySchema = z.object({
+    {{camelCase parentModel}}Id: z.number(),
+    {{camelCase relationModel}}Data: z.array(z.object({
+      {{camelCase relationModel}}Id: z.number(),
+      date: z.coerce.date(),
+    })),
+  })
+
+  const { {{camelCase parentModel}}Id, {{camelCase relationModel}}Data } = create{{pascalCase model}}ManyBodySchema.parse(request.body)
+
+  try {
+    const {{camelCase model}}Repository = new {{pascalCase model}}Repository()
+    const create{{pascalCase model}}ManyUseCase = new Create{{pascalCase model}}ManyUseCase({{camelCase model}}Repository)
+
+    const result = await create{{pascalCase model}}ManyUseCase.execute({
+      {{camelCase parentModel}}Id,
+      {{camelCase relationModel}}Data,
+    })
+
+    return reply.status(201).send(result)
+  } catch (err) {
+    if (err instanceof Error) {
+      return reply.status(409).send({ message: err.message })
+    }
+
+    throw err
+  }
+}

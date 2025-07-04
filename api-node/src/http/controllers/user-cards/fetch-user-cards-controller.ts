@@ -1,8 +1,8 @@
 import { FastifyReply, FastifyRequest } from 'fastify'
-import { CardRepository } from '@/repositories/card-repository'
-import { FetchCardUseCase } from '@/use-cases/card/fetch-card-use-case'
+import { UserCardRepository } from '@/repositories/user-card-repository'
+import { FetchUserCardUseCase } from '@/use-cases/user-card/fetch-user-card-use-case'
 
-export async function FetchCardsController(
+export async function FetchUserCardsController(
   request: FastifyRequest<{
     Querystring: {
       term?: string
@@ -17,10 +17,10 @@ export async function FetchCardsController(
 ) {
   const { term, fields, order, page = 1, pageSize = 20, itens } = request.query
 
-  const cardRepository = new CardRepository()
-  const fetchCardUseCase = new FetchCardUseCase(cardRepository)
+  const userCardRepository = new UserCardRepository()
+  const fetchUserCardUseCase = new FetchUserCardUseCase(userCardRepository)
 
-  const result = await fetchCardUseCase.execute({
+  const result = await fetchUserCardUseCase.execute({
     query: {
       term,
       fields,

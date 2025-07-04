@@ -1,4 +1,4 @@
-import { UsersRepository } from '@/repositories/users-repository-contract'
+import { UsersRepository } from '@/repositories/prisma/users-repository-contract'
 import bcrypt from 'bcryptjs'
 import { InvalidOldPasswordError } from '../errors/invalid-old-password-error'
 import { notFoundError } from '../errors/not-found-error'
@@ -10,7 +10,7 @@ interface UpdatePasswordRequest {
 }
 
 export class UpdatePasswordUseCase {
-	constructor(private userRepository: UsersRepository) {}
+	constructor(private userRepository: UsersRepository) { }
 
 	async execute({
 		userId,

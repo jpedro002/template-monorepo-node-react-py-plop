@@ -21,6 +21,7 @@ export interface IFetchResponse<T> {
     page: number
     rowCount: number
     pageCount: number
+    pageSize: number
   }
 }
 
@@ -174,6 +175,7 @@ export class CardRepository {
         page: Number(page),
         rowCount,
         pageCount: Math.ceil(rowCount / pageSize) || 1,
+        pageSize: Number(pageSize),
       },
     }
   }
@@ -216,4 +218,5 @@ export class CardRepository {
       where: { id: Number(id) },
     })
   }
+
 }

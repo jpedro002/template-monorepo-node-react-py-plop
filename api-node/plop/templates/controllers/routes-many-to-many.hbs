@@ -1,0 +1,207 @@
+import { FastifyInstance } from 'fastify'
+import { z } from 'zod'
+import { roleGuard } from '@/http/middleware/roleGuard'
+
+import { Create{{pascalCase model}}Controller } from './create-{{kebabCase model}}-controller'
+import { Update{{pascalCase model}}Controller } from './update-{{kebabCase model}}-controller'
+import { List{{pascalCase model}}sController } from './list-{{kebabCase model}}s-controller'
+import { Fetch{{pascalCase model}}sController } from './fetch-{{kebabCase model}}s-controller'
+import { Get{{pascalCase model}}Controller } from './get-{{kebabCase model}}-controller'
+import { Delete{{pascalCase model}}Controller } from './delete-{{kebabCase model}}-controller'
+import { create{{pascalCase model}}ManyController } from './create-{{kebabCase model}}-many-controller'
+import { delete{{pascalCase model}}ManyController } from './delete-{{kebabCase model}}-many-controller'
+
+// Importação dos schemas gerados pela lib zod-prisma
+import { 
+  {{pascalCase model}}CreateManyInputSchema,
+  {{pascalCase model}}UpdateManyMutationInputSchema,
+  {{pascalCase model}}Schema
+} from '@/schemas/zod'
+
+export async function {{camelCase model}}Routes(fastify: FastifyInstance) {
+  // Rota para criar um novo {{camelCase model}}
+  fastify.post('/', {
+    preValidation: [fastify.authenticate, roleGuard(['ADMIN'])],
+    handler: Create{{pascalCase model}}Controller,
+    schema: {
+      tags: ['{{pascalCase model}}s'],
+      description: 'Create a new {{camelCase model}}',
+      body: {{pascalCase model}}CreateManyInputSchema,
+      response: {
+        201: {{pascalCase model}}Schema,
+        400: z.object({
+          message: z.string(),
+          errors: z.any().optional(),
+        }),
+      },
+    },
+  })
+
+  // Rota para criar múltiplos {{camelCase model}}s (Many-to-Many)
+  fastify.post('/many', {
+    preValidation: [fastify.authenticate, roleGuard(['ADMIN'])],
+    handler: create{{pascalCase model}}ManyController,
+    schema: {
+      tags: ['{{pascalCase model}}s'],
+      description: 'Create multiple {{camelCase model}}s for a {{camelCase parentModel}}',
+      body: z.object({
+        {{camelCase parentModel}}Id: z.number(),
+        {{camelCase relationModel}}Data: z.array(z.object({
+          {{camelCase relationModel}}Id: z.number(),
+          date: z.coerce.date(),
+        })),
+      }),
+      response: {
+        201: z.object({
+          count: z.number(),
+        }),
+        409: z.object({
+          message: z.string(),
+        }),
+      },
+    },
+  })
+
+  // Rota para deletar múltiplos {{camelCase model}}s por {{camelCase parentModel}}Id (Many-to-Many)
+  fastify.delete('/many', {
+    preValidation: [fastify.authenticate, roleGuard(['ADMIN'])],
+    handler: delete{{pascalCase model}}ManyController,
+    schema: {
+      tags: ['{{pascalCase model}}s'],
+      description: 'Delete multiple {{camelCase model}}s by {{camelCase parentModel}}Id',
+      body: z.object({
+        {{camelCase parentModel}}Id: z.number(),
+        {{camelCase relationModel}}Ids: z.array(z.number()).optional(),
+      }),
+      response: {
+        200: z.object({
+          count: z.number(),
+        }),
+        400: z.object({
+          message: z.string(),
+        }),
+      },
+    },
+  })
+
+  // Rota para atualizar um {{camelCase model}} existente
+  fastify.put('/:id', {
+    preValidation: [fastify.authenticate, roleGuard(['ADMIN'])],
+    handler: Update{{pascalCase model}}Controller,
+    schema: {
+      tags: ['{{pascalCase model}}s'],
+      description: 'Update an existing {{camelCase model}}',
+      params: z.object({
+        id: z.string().transform(val => parseInt(val)),
+      }),
+      body: {{pascalCase model}}UpdateManyMutationInputSchema,
+      response: {
+        200: {{pascalCase model}}Schema,
+        400: z.object({
+          message: z.string(),
+          errors: z.any().optional(),
+        }),
+      },
+    },
+  })
+
+  // Rota para listar todos os {{camelCase model}}s
+  fastify.get('/', {
+    preValidation: [fastify.authenticate, roleGuard(['ADMIN'])],
+    handler: List{{pascalCase model}}sController,
+    schema: {
+      tags: ['{{pascalCase model}}s'],
+      description: 'List all {{camelCase model}}s',
+      querystring: z.object({
+        term: z.string().optional(),
+        fields: z
+          .union([z.array(z.string()), z.string(), z.undefined()])
+          .optional()
+          .transform((val) => {
+            console.log('val ' + Math.random(), val)
+
+            if (Array.isArray(val)) return val
+            if (typeof val === 'string') return [val]
+            return []
+          }),
+        order: z.string().optional(),
+      }),
+      response: {
+        200: z.array({{pascalCase model}}Schema),
+      },
+    },
+  })
+
+  // Rota para busca paginada de {{camelCase model}}s
+  fastify.get('/fetch', {
+    preValidation: [fastify.authenticate, roleGuard(['ADMIN'])],
+    handler: Fetch{{pascalCase model}}sController,
+    schema: {
+      tags: ['{{pascalCase model}}s'],
+      description: 'Fetch {{camelCase model}}s with pagination',
+      querystring: z.object({
+        term: z.string().optional(),
+        fields: z
+          .union([z.array(z.string()), z.string(), z.undefined()])
+          .optional()
+          .transform((val) => {
+            console.log('val ' + Math.random(), val)
+
+            if (Array.isArray(val)) return val
+            if (typeof val === 'string') return [val]
+            return []
+          }),
+        order: z.string().optional(),
+        page: z.coerce.number().positive().optional().default(1),
+        pageSize: z.coerce.number().positive().optional().default(20),
+        itens: z.string().optional(),
+      }),
+      response: {
+        200: z.object({
+          data: z.array({{pascalCase model}}Schema),
+          pagination: z.object({
+            page: z.number(),
+            rowCount: z.number(),
+            pageCount: z.number(),
+            pageSize: z.number(),
+          }),
+        }),
+      },
+    },
+  })
+
+  // Rota para obter um único {{camelCase model}} por ID
+  fastify.get('/:id', {
+    preValidation: [fastify.authenticate, roleGuard(['ADMIN'])],
+    handler: Get{{pascalCase model}}Controller,
+    schema: {
+      tags: ['{{pascalCase model}}s'],
+      description: 'Get a {{camelCase model}} by ID',
+      params: z.object({
+        id: z.string().transform(val => parseInt(val)),
+      }),
+      response: {
+        200: {{pascalCase model}}Schema,
+        404: z.object({
+          message: z.string(),
+        }),
+      },
+    },
+  })
+
+  // Rota para excluir um {{camelCase model}} por ID
+  fastify.delete('/:id', {
+    preValidation: [fastify.authenticate, roleGuard(['ADMIN'])],
+    handler: Delete{{pascalCase model}}Controller,
+    schema: {
+      tags: ['{{pascalCase model}}s'],
+      description: 'Delete a {{camelCase model}} by ID',
+      params: z.object({
+        id: z.string().transform(val => parseInt(val)),
+      }),
+      response: {
+        204: z.null(),
+      },
+    },
+  })
+}

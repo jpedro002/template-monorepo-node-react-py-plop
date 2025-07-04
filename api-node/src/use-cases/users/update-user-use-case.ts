@@ -1,6 +1,6 @@
 import { Role } from '@prisma/client'
 
-import { UsersRepository } from '@/repositories/users-repository-contract'
+import { UsersRepository } from '@/repositories/prisma/users-repository-contract'
 import { processPictureFile } from '@/ultils/process-picture-file'
 import { MultipartFile } from '@fastify/multipart'
 import { notFoundError } from '../errors/not-found-error'
@@ -13,7 +13,7 @@ interface UpdateUserRequest {
 }
 
 export class UpdateUserUseCase {
-	constructor(private userRepository: UsersRepository) {}
+	constructor(private userRepository: UsersRepository) { }
 
 	async execute(data: UpdateUserRequest) {
 		const user = await this.userRepository.findById(Number(data.id))

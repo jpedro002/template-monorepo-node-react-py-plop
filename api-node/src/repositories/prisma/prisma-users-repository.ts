@@ -1,6 +1,6 @@
 import { db } from '@/libs/prisma'
 import { Prisma, Role, User } from '@prisma/client'
-import { UsersRepository } from '../users-repository-contract'
+import { UsersRepository } from './users-repository-contract'
 
 export class PrismaUsersRepository implements UsersRepository {
 	async listUsers(filters: { customerName?: string; status?: Role }) {

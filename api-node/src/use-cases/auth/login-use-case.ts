@@ -1,4 +1,4 @@
-import { UsersRepository } from '@/repositories/users-repository-contract'
+import { UsersRepository } from '@/repositories/prisma/users-repository-contract'
 import { isToday } from '@/ultils/dateUltils'
 import { Role } from '@prisma/client'
 import bcrypt from 'bcryptjs'
@@ -18,7 +18,7 @@ export interface JwtContent {
 }
 
 export class LoginUseCase {
-	constructor(private userRepository: UsersRepository) {}
+	constructor(private userRepository: UsersRepository) { }
 
 	async execute(input: LoginInput, reply: FastifyReply) {
 		const { email, password } = input

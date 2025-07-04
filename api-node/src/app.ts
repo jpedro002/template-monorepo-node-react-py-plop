@@ -19,6 +19,7 @@ import { sessionRoutes } from './http/controllers/auth/@routes'
 
 import { cardRoutes } from './http/controllers/cards/@routes'
 import { patientRoutes } from './http/controllers/patients/@routes'
+import { userCardRoutes } from './http/controllers/user-cards/@routes'
 import { userRoutes } from './http/controllers/users/@routes'
 import { delay } from './ultils/delay'
 
@@ -50,6 +51,8 @@ app.register(userRoutes, { prefix: '/users' })
 app.register(cardRoutes, { prefix: '/cards' })
 
 app.register(patientRoutes, { prefix: '/patients' })
+
+app.register(userCardRoutes, { prefix: '/user-cards' })
 
 app.setErrorHandler((error, _, reply) => {
 	if (error instanceof ZodError) {

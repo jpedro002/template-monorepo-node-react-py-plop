@@ -1,4 +1,4 @@
-import { UsersRepository } from '@/repositories/users-repository-contract'
+import { UsersRepository } from '@/repositories/prisma/users-repository-contract'
 
 import { processPictureFile } from '@/ultils/process-picture-file'
 import { MultipartFile } from '@fastify/multipart'
@@ -19,7 +19,7 @@ interface CreateUserUseCaseResponse
 }
 
 export class CreateUserUseCase {
-	constructor(private usersRepository: UsersRepository) {}
+	constructor(private usersRepository: UsersRepository) { }
 
 	async execute(
 		data: CreateUserUseCaseRequest,

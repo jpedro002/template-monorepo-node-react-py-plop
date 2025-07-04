@@ -1,4 +1,4 @@
-import { UsersRepository } from '@/repositories/users-repository-contract'
+import { UsersRepository } from '@/repositories/prisma/users-repository-contract'
 import { Role } from '@prisma/client'
 
 interface ListUsersRequest {
@@ -14,7 +14,7 @@ interface ListUsersResponse {
 }
 
 export class ListUsersUseCase {
-	constructor(private usersRepository: UsersRepository) {}
+	constructor(private usersRepository: UsersRepository) { }
 
 	async execute({
 		customerName,

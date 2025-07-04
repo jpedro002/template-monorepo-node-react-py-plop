@@ -11,7 +11,9 @@
 		"lint": "biome lint --fix",
 		"prisma:migrate": "prisma migrate dev --name",
 		"generate:zod": "prisma generate && zod-prisma-types generate",
-		"plop": "cross-env NODE_OPTIONS='--import tsx' plop --plopfile=plopfile.ts"
+		"plop": "cross-env NODE_OPTIONS='--import tsx' plop --plopfile=plopfile.ts",
+		"seed": "tsx prisma/seed/dev/seedModels.ts",
+		"seed:legacy": "node prisma/seed/dev/seed.js"
 	},
 	"zod-prisma-types": {
 		"output": "src/schemas/zod",

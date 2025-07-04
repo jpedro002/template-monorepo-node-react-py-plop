@@ -1,0 +1,23 @@
+import { {{pascalCase model}}Repository } from '@/repositories/{{kebabCase model}}-repository'
+
+interface Delete{{pascalCase model}}ManyUseCaseRequest {
+  {{camelCase parentModel}}Id: number
+  {{camelCase relationModel}}Ids?: number[]
+}
+
+interface Delete{{pascalCase model}}ManyUseCaseResponse {
+  count: number
+}
+
+export class Delete{{pascalCase model}}ManyUseCase {
+  constructor(private {{camelCase model}}Repository: {{pascalCase model}}Repository) {}
+
+  async execute({
+    {{camelCase parentModel}}Id,
+    {{camelCase relationModel}}Ids,
+  }: Delete{{pascalCase model}}ManyUseCaseRequest): Promise<Delete{{pascalCase model}}ManyUseCaseResponse> {
+    const result = await this.{{camelCase model}}Repository.deleteManyBy{{pascalCase parentModel}}Id({{camelCase parentModel}}Id, {{camelCase relationModel}}Ids)
+
+    return result
+  }
+}

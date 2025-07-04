@@ -1,9 +1,9 @@
-import { UsersRepository } from '@/repositories/users-repository-contract'
+import { UsersRepository } from '@/repositories/prisma/users-repository-contract'
 import bcrypt from 'bcryptjs'
 import { notFoundError } from '../errors/not-found-error'
 
 export class ResetPasswordUseCase {
-	constructor(private userRepository: UsersRepository) {}
+	constructor(private userRepository: UsersRepository) { }
 
 	async execute(userId: number): Promise<void> {
 		const NEW_PASSWORD = '12345678'

@@ -1,0 +1,23 @@
+import { {{pascalCase model}}Repository } from '@/repositories/{{kebabCase model}}-repository'
+
+interface Create{{pascalCase model}}ManyUseCaseRequest {
+  {{camelCase parentModel}}Id: number
+  {{camelCase relationModel}}Data: { {{camelCase relationModel}}Id: number; date: Date }[]
+}
+
+interface Create{{pascalCase model}}ManyUseCaseResponse {
+  count: number
+}
+
+export class Create{{pascalCase model}}ManyUseCase {
+  constructor(private {{camelCase model}}Repository: {{pascalCase model}}Repository) {}
+
+  async execute({
+    {{camelCase parentModel}}Id,
+    {{camelCase relationModel}}Data,
+  }: Create{{pascalCase model}}ManyUseCaseRequest): Promise<Create{{pascalCase model}}ManyUseCaseResponse> {
+    const result = await this.{{camelCase model}}Repository.createMany({{camelCase parentModel}}Id, {{camelCase relationModel}}Data)
+
+    return result
+  }
+}

@@ -17,13 +17,13 @@ generator zod {
 }
 
 model User {
-  id         Int         @id @default(autoincrement())
-  email      String      @unique
+  id         Int        @id @default(autoincrement())
+  email      String     @unique
   password   String
   role       Role
-  name       String      @db.VarChar(90)
-  createdAt  DateTime    @default(now())
-  user_cards userCards[]
+  name       String     @db.VarChar(90)
+  createdAt  DateTime   @default(now())
+  user_cards UserCard[]
 
   @@map("users")
 }
@@ -34,7 +34,7 @@ enum Role {
   // PATIENT
 }
 
-model userCards {
+model UserCard {
   id        Int      @id @default(autoincrement())
   userId    Int
   cardId    Int
@@ -52,7 +52,7 @@ model Card {
   cardType   String
   createdAt  DateTime @default(now())
 
-  user_cards userCards[]
+  user_cards UserCard[]
 
   @@map("cards")
 }

@@ -26,17 +26,17 @@ export interface IFetchResponse<T> {
 }
 
 export interface IReqParams {
-// biome-ignore lint/suspicious/noExplicitAny: <explanation>
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   id: any
 }
 
-export class {{pascalCase model}}Repository {
-  private prismaArgs: Prisma.{{pascalCase model}}FindManyArgs = {}
+export class UserCardRepository {
+  private prismaArgs: Prisma.UserCardFindManyArgs = {}
 
   private createSearchConditions(
     term: string,
     fields: string[],
-  ): Prisma.{{pascalCase model}}WhereInput[] {
+  ): Prisma.UserCardWhereInput[] {
     const isNumeric = !isNaN(Number(term)) && term !== ''
     const numericValue = isNumeric ? Number(term) : null
 
@@ -49,24 +49,24 @@ export class {{pascalCase model}}Repository {
             const [field1, field2] = parts
             return {
               [field1]: {
-                [field2]: { 
-                  contains: term, 
-                  mode: 'insensitive' as Prisma.QueryMode 
+                [field2]: {
+                  contains: term,
+                  mode: 'insensitive' as Prisma.QueryMode
                 },
               },
-            } as Prisma.{{pascalCase model}}WhereInput
+            } as Prisma.UserCardWhereInput
           } else if (parts.length === 3) {
             const [field1, field2, field3] = parts
             return {
               [field1]: {
                 [field2]: {
-                  [field3]: { 
-                    contains: term, 
-                    mode: 'insensitive' as Prisma.QueryMode 
+                  [field3]: {
+                    contains: term,
+                    mode: 'insensitive' as Prisma.QueryMode
                   },
                 },
               },
-            } as Prisma.{{pascalCase model}}WhereInput
+            } as Prisma.UserCardWhereInput
           }
           return null
         }
@@ -77,7 +77,7 @@ export class {{pascalCase model}}Repository {
             m.toLowerCase().includes(prefix.toLowerCase()),
           )
         ) {
-          return { [m]: { equals: numericValue } } as Prisma.{{pascalCase model}}WhereInput
+          return { [m]: { equals: numericValue } } as Prisma.UserCardWhereInput
         } else {
           try {
             return {
@@ -85,18 +85,18 @@ export class {{pascalCase model}}Repository {
                 contains: term,
                 mode: 'insensitive' as Prisma.QueryMode,
               },
-            } as Prisma.{{pascalCase model}}WhereInput
+            } as Prisma.UserCardWhereInput
           } catch (_e) {
             return null
           }
         }
       })
-      .filter((condition): condition is Prisma.{{pascalCase model}}WhereInput => Boolean(condition))
+      .filter((condition): condition is Prisma.UserCardWhereInput => Boolean(condition))
   }
 
   async all(
     query: IQuery,
-  ): Promise<IQueryResponse<Prisma.{{pascalCase model}}GetPayload<typeof this.prismaArgs>>> {
+  ): Promise<IQueryResponse<Prisma.UserCardGetPayload<typeof this.prismaArgs>>> {
     const { fields = [], term = null, order = null } = query
 
     let predicate = { where: {} }
@@ -114,8 +114,8 @@ export class {{pascalCase model}}Repository {
     }
 
     const [rowCount, data] = await db.$transaction([
-      db.{{camelCase model}}.count(predicate),
-      db.{{camelCase model}}.findMany({
+      db.userCard.count(predicate),
+      db.userCard.findMany({
         ...predicate,
         orderBy: order ? { [order]: 'asc' } : {},
         select: this.prismaArgs.select,
@@ -127,7 +127,7 @@ export class {{pascalCase model}}Repository {
 
   async fetch(
     query: IQuery,
-  ): Promise<IFetchResponse<Prisma.{{pascalCase model}}GetPayload<typeof this.prismaArgs>>> {
+  ): Promise<IFetchResponse<Prisma.UserCardGetPayload<typeof this.prismaArgs>>> {
     const {
       fields = [],
       term = null,
@@ -137,13 +137,13 @@ export class {{pascalCase model}}Repository {
       itens = [],
     } = query
 
-    let predicate: Prisma.{{pascalCase model}}FindManyArgs = { where: {} }
+    let predicate: Prisma.UserCardFindManyArgs = { where: {} }
 
     if (Array.isArray(itens) && itens.length > 0) {
       if (!predicate.where) predicate.where = {}
       predicate.where.id = { in: itens.map(Number) }
     }
-    
+
     if (term && fields && Array.isArray(fields)) {
       const validConditions = this.createSearchConditions(term, fields)
 
@@ -157,10 +157,10 @@ export class {{pascalCase model}}Repository {
     }
 
     const [rowCount, data] = await db.$transaction([
-      db.{{camelCase model}}.count({
+      db.userCard.count({
         where: predicate.where,
       }),
-      db.{{camelCase model}}.findMany({
+      db.userCard.findMany({
         where: predicate.where,
         take: Number(pageSize),
         skip: (Number(page) - 1) * Number(pageSize),
@@ -180,9 +180,9 @@ export class {{pascalCase model}}Repository {
     }
   }
 
-  async one(params: IReqParams): Promise<Prisma.{{pascalCase model}}GetPayload<typeof this.prismaArgs>> {
+  async one(params: IReqParams): Promise<Prisma.UserCardGetPayload<typeof this.prismaArgs>> {
     const { id } = params
-    const data = await db.{{camelCase model}}.findUnique({
+    const data = await db.userCard.findUnique({
       where: { id: Number(id) },
       select: this.prismaArgs.select,
     })
@@ -190,10 +190,10 @@ export class {{pascalCase model}}Repository {
     return data
   }
 
-  async post(body: Prisma.{{pascalCase model}}CreateInput): Promise<Prisma.{{pascalCase model}}GetPayload<typeof this.prismaArgs>> {
+  async post(body: Prisma.UserCardCreateInput): Promise<Prisma.UserCardGetPayload<typeof this.prismaArgs>> {
     if ('id' in body) delete body.id
 
-    const data = await db.{{camelCase model}}.create({
+    const data = await db.userCard.create({
       data: { ...body },
       select: this.prismaArgs.select,
     })
@@ -201,10 +201,10 @@ export class {{pascalCase model}}Repository {
     return data
   }
 
-  async put(params: IReqParams, body: Prisma.{{pascalCase model}}UpdateInput): Promise<Prisma.{{pascalCase model}}GetPayload<typeof this.prismaArgs>> {
+  async put(params: IReqParams, body: Prisma.UserCardUpdateInput): Promise<Prisma.UserCardGetPayload<typeof this.prismaArgs>> {
     const { id } = params
     if ('id' in body) delete body.id
-    const data = await db.{{camelCase model}}.update({
+    const data = await db.userCard.update({
       data: { ...body },
       where: { id: Number(id) },
       select: this.prismaArgs.select,
@@ -214,41 +214,39 @@ export class {{pascalCase model}}Repository {
 
   async del(params: IReqParams): Promise<void> {
     const { id } = params
-    await db.{{camelCase model}}.delete({
+    await db.userCard.delete({
       where: { id: Number(id) },
     })
   }
 
-{{#if isManyToMany}}
   async createMany(
-    {{camelCase parentModel}}Id: number,
-    {{camelCase relationModel}}Data: { {{camelCase relationModel}}Id: number; date: Date }[],
+    userId: number,
+    cardData: { cardId: number }[],
   ): Promise<{ count: number }> {
-    const {{camelCase parentModel}} = await db.{{camelCase parentModel}}.findUnique({
-      where: { id: {{camelCase parentModel}}Id },
+    const user = await db.user.findUnique({
+      where: { id: userId },
     })
 
-    if (!{{camelCase parentModel}}) {
-      throw new Error('{{pascalCase parentModel}} não encontrado.')
+    if (!user) {
+      throw new Error('User não encontrado.')
     }
 
-    const unique{{pascalCase relationModel}}Data = {{camelCase relationModel}}Data.reduce((acc, current) => {
-      const exists = acc.find(item => item.{{camelCase relationModel}}Id === current.{{camelCase relationModel}}Id)
+    const uniqueCardData = cardData.reduce((acc, current) => {
+      const exists = acc.find(item => item.cardId === current.cardId)
       if (!exists) {
         acc.push(current)
       }
       return acc
-    }, [] as { {{camelCase relationModel}}Id: number; date: Date }[])
+    }, [] as { cardId: number }[])
 
-    const data = unique{{pascalCase relationModel}}Data.map(({{camelCase relationModel}}) => ({
-      {{camelCase parentModel}}Id: {{camelCase parentModel}}Id,
-      {{camelCase relationModel}}Id: {{camelCase relationModel}}.{{camelCase relationModel}}Id,
-      date: {{camelCase relationModel}}.date,
+    const data = uniqueCardData.map((card) => ({
+      userId: userId,
+      cardId: card.cardId,
     }))
 
     console.log('data', JSON.stringify(data, null, 2))
 
-    const result = await db.{{camelCase model}}.createMany({
+    const result = await db.userCard.createMany({
       data,
       skipDuplicates: true,
     })
@@ -256,31 +254,30 @@ export class {{pascalCase model}}Repository {
     return { count: result.count }
   }
 
-  async deleteManyBy{{pascalCase parentModel}}Id(
-    {{camelCase parentModel}}Id: number,
-    {{camelCase relationModel}}Ids?: number[],
+  async deleteManyByUserId(
+    userId: number,
+    cardIds?: number[],
   ): Promise<{ count: number }> {
-    const where: Prisma.{{pascalCase model}}WhereInput = {
-      {{camelCase parentModel}}Id: {{camelCase parentModel}}Id,
+    const where: Prisma.UserCardWhereInput = {
+      userId: userId,
     }
 
-    const {{camelCase parentModel}} = await db.{{camelCase parentModel}}.findUnique({
-      where: { id: {{camelCase parentModel}}Id },
+    const user = await db.user.findUnique({
+      where: { id: userId },
     })
 
-    if (!{{camelCase parentModel}}) {
-      throw new Error('{{pascalCase parentModel}} não encontrado.')
+    if (!user) {
+      throw new Error('User não encontrado.')
     }
 
-    if ({{camelCase relationModel}}Ids && {{camelCase relationModel}}Ids.length > 0) {
-      where.{{camelCase relationModel}}Id = {
-        in: {{camelCase relationModel}}Ids,
+    if (cardIds && cardIds.length > 0) {
+      where.cardId = {
+        in: cardIds,
       }
     }
 
-    const result = await db.{{camelCase model}}.deleteMany({ where })
+    const result = await db.userCard.deleteMany({ where })
 
     return { count: result.count }
   }
-{{/if}}
 }
